@@ -1,0 +1,47 @@
+{
+  "task": "dim_numeric",
+  "dim_metrics": {
+    "noi": {
+      "n": 125,
+      "mae": 0.40493359827090925,
+      "rmse": 0.5363010656921586,
+      "pearson_r": 0.8089275154461132,
+      "spearman_rho": 0.7399771774028412,
+      "n_total": 125,
+      "n_no_number": 0
+    },
+    "col": {
+      "n": 121,
+      "mae": 0.5541873733285881,
+      "rmse": 0.6942569655069202,
+      "pearson_r": 0.6065436597446017,
+      "spearman_rho": 0.5369911215901015,
+      "n_total": 121,
+      "n_no_number": 0
+    },
+    "loud": {
+      "n": 121,
+      "mae": 0.4089220935328774,
+      "rmse": 0.524681294293521,
+      "pearson_r": 0.7867183499621715,
+      "spearman_rho": 0.7545525414442109,
+      "n_total": 121,
+      "n_no_number": 0
+    },
+    "dis": {
+      "n": 113,
+      "mae": 0.4676966914667893,
+      "rmse": 0.6185008456514696,
+      "pearson_r": 0.8181656422936253,
+      "spearman_rho": 0.8202667566487224,
+      "n_total": 113,
+      "n_no_number": 0
+    }
+  },
+  "multi_dim_sample_stats": {
+    "n_samples": 0,
+    "n_full": 0,
+    "n_partial": 0,
+    "n_none": 0
+  }
+}

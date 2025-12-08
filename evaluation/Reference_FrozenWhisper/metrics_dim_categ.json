@@ -1,0 +1,47 @@
+{
+  "task": "dim_categ",
+  "dim_metrics": {
+    "noi": {
+      "n": 107,
+      "mae": 0.7530269191926887,
+      "rmse": 0.9717118495967776,
+      "pearson_r": 0.6114244941535854,
+      "spearman_rho": 0.6742009546256429,
+      "n_total": 111,
+      "n_no_number": 4
+    },
+    "dis": {
+      "n": 136,
+      "mae": 0.7861674095370352,
+      "rmse": 0.9735431899011383,
+      "pearson_r": 0.4626764800603619,
+      "spearman_rho": 0.4460387712439778,
+      "n_total": 137,
+      "n_no_number": 1
+    },
+    "col": {
+      "n": 106,
+      "mae": 0.4443666207499532,
+      "rmse": 0.5816379663139062,
+      "pearson_r": 0.7455760877552774,
+      "spearman_rho": 0.7166227233657183,
+      "n_total": 114,
+      "n_no_number": 8
+    },
+    "loud": {
+      "n": 111,
+      "mae": 0.8302136086300334,
+      "rmse": 1.027781115855768,
+      "pearson_r": 0.3176541496211199,
+      "spearman_rho": 0.3422384948125903,
+      "n_total": 118,
+      "n_no_number": 7
+    }
+  },
+  "multi_dim_sample_stats": {
+    "n_samples": 0,
+    "n_full": 0,
+    "n_partial": 0,
+    "n_none": 0
+  }
+}

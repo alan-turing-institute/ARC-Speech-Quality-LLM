@@ -1,0 +1,47 @@
+{
+  "task": "dim_categ",
+  "dim_metrics": {
+    "noi": {
+      "n": 109,
+      "mae": 0.5659202567505809,
+      "rmse": 0.7362474179773592,
+      "pearson_r": 0.7324100425442759,
+      "spearman_rho": 0.7507527086309975,
+      "n_total": 111,
+      "n_no_number": 2
+    },
+    "dis": {
+      "n": 137,
+      "mae": 0.7769048011858244,
+      "rmse": 0.9685565303990341,
+      "pearson_r": 0.4551820407599842,
+      "spearman_rho": 0.46079992650949336,
+      "n_total": 137,
+      "n_no_number": 0
+    },
+    "col": {
+      "n": 114,
+      "mae": 0.577686566514305,
+      "rmse": 0.7356916502069045,
+      "pearson_r": 0.6173810514815422,
+      "spearman_rho": 0.47159349924601135,
+      "n_total": 114,
+      "n_no_number": 0
+    },
+    "loud": {
+      "n": 118,
+      "mae": 0.8078349729100123,
+      "rmse": 0.9897515101682102,
+      "pearson_r": 0.40774377096373615,
+      "spearman_rho": 0.42766633098786877,
+      "n_total": 118,
+      "n_no_number": 0
+    }
+  },
+  "multi_dim_sample_stats": {
+    "n_samples": 0,
+    "n_full": 0,
+    "n_partial": 0,
+    "n_none": 0
+  }
+}

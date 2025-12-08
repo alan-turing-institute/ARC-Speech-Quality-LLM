@@ -1,0 +1,713 @@
+task,dim_from_meta,question,gt_answer_template,generated,dim,y_true,y_pred,status
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.3,4.1 on the 1–5 scale.,noi,4.3141584769230805,4.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 4.3 out of 5.,4.3 on the 1–5 scale.,noi,4.32511030322581,4.3,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.4,4.5 on the 1–5 scale.,noi,4.42356434285714,4.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.3, 4.2 on the 1–5 scale.,loud,4.25487901875,4.2,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.2,4.1 on the 1–5 scale.,col,3.20639243478261,4.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.3 on the 1–5 scale.,3.9,col,3.29847468125,3.9,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.3 on the 1–5 scale.,3.6 on the 1–5 scale.,noi,3.2857883,3.6,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.9 on the 1–5 scale.,3.5 on the 1–5 scale.,dis,3.87360988695652,3.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.8 out of 5., 3.4,loud,3.83925266153846,3.4,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.9 on the 1–5 scale., 4.0,col,3.86777415757576,4.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 1.3 out of 5., 1.3,noi,1.3223342125,1.3,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.3, 3.8,loud,3.34465005217391,3.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.3, 4.1,noi,4.2731230516129,4.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.7, 3.0,col,3.65693151034483,3.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.5 on the 1–5 scale., 4.5,noi,4.50636955625,4.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 1.9 out of 5., 2.6 on the 1–5 scale.,loud,1.90604280689655,2.6,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 4.4 out of 5.,4.1 on the 1–5 scale.,noi,4.356863475,4.1,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 4.2 out of 5.,4.2,dis,4.15465507272727,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.0 out of 5., 1.9 on the 1–5 scale.,loud,3.0246501741935496,1.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.6, 1.6 on the 1–5 scale.,loud,2.628163648,1.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.9 on the 1–5 scale., 2.3,col,2.9165224967741903,2.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.2,3.9,dis,4.191578112,3.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.7,3.6,loud,2.68479698235294,3.6,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.8 on the 1–5 scale.,3.2 on the 1–5 scale.,loud,2.75847151304348,3.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.5,2.7 on the 1–5 scale.,col,3.49007600625,2.7,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.6 on the 1–5 scale.,4.0 on the 1–5 scale.,dis,3.56782072173913,4.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.4,4.2,loud,4.39438985806452,4.2,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.8 out of 5.,3.2 on the 1–5 scale.,col,3.81919398064516,3.2,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.5 on the 1–5 scale.,2.6 on the 1–5 scale.,col,3.5343631548387098,2.6,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.4,1.3 on the 1–5 scale.,dis,1.3625830969697,1.3,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.3,4.0 on the 1–5 scale.,noi,3.3407633294117702,4.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.5 on the 1–5 scale.,3.6,loud,3.5152666,3.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",1.7, 2.2 on the 1–5 scale.,col,1.65249843809524,2.2,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.4 out of 5.,2.4 on the 1–5 scale.,col,2.43788416774194,2.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.3 out of 5., 3.5 on the 1–5 scale.,dis,3.3457962846153904,3.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",4.1,3.8 on the 1–5 scale.,dis,4.05599498064516,3.8,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.6 on the 1–5 scale.,3.3 on the 1–5 scale.,col,2.57527618181818,3.3,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.1,4.4 on the 1–5 scale.,dis,3.1220613225806497,4.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.6,3.5,noi,3.62482052258065,3.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.6 on the 1–5 scale.,2.7 on the 1–5 scale.,loud,2.59005417931034,2.7,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 1.7 out of 5., 1.9,col,1.6822202451612902,1.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.7 on the 1–5 scale., 2.2 on the 1–5 scale.,loud,2.74774911428571,2.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 3.4 out of 5.,3.4 on the 1–5 scale.,noi,3.39540676875,3.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.5 on the 1–5 scale., 1.9,loud,2.5221060875,1.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.0,4.0 on the 1–5 scale.,loud,3.96341080625,4.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.9 out of 5.,3.6 on the 1–5 scale.,loud,3.94792620645161,3.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.4,3.6 on the 1–5 scale.,col,3.3934854071428595,3.6,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.8,4.2 on the 1–5 scale.,dis,3.79210660645161,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.1 out of 5.,3.8 on the 1–5 scale.,loud,3.1085898516129,3.8,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.9 on the 1–5 scale., 2.5 on the 1–5 scale.,col,2.900140528,2.5,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.5 on the 1–5 scale.,2.8 on the 1–5 scale.,col,2.4962082000000003,2.8,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.6,3.3 on the 1–5 scale.,dis,2.5810885,3.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,2.9 on the 1–5 scale.,2.3 on the 1–5 scale.,loud,2.88595123225806,2.3,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.0 out of 5.,4.1 on the 1–5 scale.,noi,2.9628416625,4.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.4 on the 1–5 scale.,4.1 on the 1–5 scale.,noi,3.43788023478261,4.1,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 1.9 out of 5., 2.1 on the 1–5 scale.,dis,1.91769384117647,2.1,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.1 on the 1–5 scale.,2.5 on the 1–5 scale.,dis,2.12538570625,2.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.6 out of 5.,4.1 on the 1–5 scale.,noi,3.55780181428571,4.1,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.0 out of 5.,2.4 on the 1–5 scale.,dis,2.00843219375,2.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.4 out of 5.,3.6 on the 1–5 scale.,noi,3.437674675,3.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.2 out of 5.,1.9 on the 1–5 scale.,col,2.1592846000000003,1.9,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.8 on the 1–5 scale.,3.8 on the 1–5 scale.,noi,2.83593649230769,3.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 1.9 out of 5.,1.5 on the 1–5 scale.,dis,1.89489222580645,1.5,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.6 on the 1–5 scale.,1.4 on the 1–5 scale.,dis,1.62199664705882,1.4,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.0 on the 1–5 scale., 2.2 on the 1–5 scale.,col,2.00409987826087,2.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.2 on the 1–5 scale.,3.3 on the 1–5 scale.,noi,3.18068488387097,3.3,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.2 out of 5., 2.1 on the 1–5 scale.,col,2.1698201941176496,2.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.5 on the 1–5 scale.,3.8 on the 1–5 scale.,noi,3.46665723225806,3.8,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 3.9 out of 5.,3.3 on the 1–5 scale.,col,3.89210718095238,3.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 4.1 out of 5.,3.8 on the 1–5 scale.,loud,4.1091457483871,3.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.4,2.8,dis,3.35844751875,2.8,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.2 on the 1–5 scale., 2.7,dis,3.2045831760000003,2.7,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.4 on the 1–5 scale.,3.4 on the 1–5 scale.,dis,3.43556354705882,3.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.7 out of 5.,4.0,noi,3.6686066173913,4.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.4 out of 5.,2.1 on the 1–5 scale.,dis,2.44810808,2.1,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.0 on the 1–5 scale.,4.2,loud,3.9645302125,4.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 1.9 out of 5.,3.0,dis,1.92571956774194,3.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.2,4.1 on the 1–5 scale.,noi,3.22718441875,4.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.7 on the 1–5 scale.,3.4 on the 1–5 scale.,col,2.72425018181818,3.4,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 3.4 out of 5.,3.9,noi,3.4263180129032302,3.9,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.3 out of 5.,3.3,dis,2.2707050258064503,3.3,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.5,2.1 on the 1–5 scale.,col,2.54521056153846,2.1,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",1.9 on the 1–5 scale.,2.9 on the 1–5 scale.,dis,1.85914425882353,2.9,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.3 on the 1–5 scale.,2.8 on the 1–5 scale.,col,2.34083641935484,2.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 1.6 out of 5.,1.8 on the 1–5 scale.,dis,1.64673009677419,1.8,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.2, 1.8 on the 1–5 scale.,col,2.23720416129032,1.8,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.1,3.6 on the 1–5 scale.,loud,3.08451160625,3.6,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 1.6 out of 5., 1.8 on the 1–5 scale.,dis,1.583882416,1.8,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 2.9 out of 5., 2.2,loud,2.872137592,2.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",1.6 on the 1–5 scale., 2.3 on the 1–5 scale.,dis,1.56402173125,2.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.3 out of 5., 1.9 on the 1–5 scale.,col,2.268850256,1.9,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.4 out of 5.,4.1 on the 1–5 scale.,noi,3.35456168387097,4.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.8 out of 5., 3.6,noi,2.78752667741935,3.6,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",2.7 on the 1–5 scale., 3.6,dis,2.69004107619048,3.6,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 1.4 out of 5., 1.4,loud,1.3977854193548402,1.4,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.3, 4.2 on the 1–5 scale.,noi,2.34566972903226,4.2,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.6 on the 1–5 scale., 2.2,col,3.59926485384615,2.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 3.2 out of 5., 2.3,col,3.16132413548387,2.3,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",4.3, 4.0 on the 1–5 scale.,dis,4.28341345384615,4.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.2, 4.0 on the 1–5 scale.,noi,4.165337012903231,4.0,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 2.2 out of 5., 3.4,loud,2.248654904,3.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 2.4 out of 5., 2.4 on the 1–5 scale.,loud,2.38526475483871,2.4,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.2 on the 1–5 scale., 4.0 on the 1–5 scale.,noi,4.19331015483871,4.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",4.3, 4.4,dis,4.30068042580645,4.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 1.9 out of 5., 2.3,loud,1.92199616875,2.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 3.9 out of 5.,3.5,dis,3.86307081935484,3.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.0, 2.6,loud,2.01717186153846,2.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.1 out of 5.,2.5 on the 1–5 scale.,col,3.0738473285714303,2.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,1.9 on the 1–5 scale., 2.9 on the 1–5 scale.,noi,1.90511724615385,2.9,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.3 out of 5., 1.8 on the 1–5 scale.,col,2.31924650322581,1.8,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,1.6 on the 1–5 scale., 1.7 on the 1–5 scale.,loud,1.62663514375,1.7,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.2 on the 1–5 scale., 2.8 on the 1–5 scale.,noi,2.16730219354839,2.8,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",1.5, 1.5 on the 1–5 scale.,loud,1.47032528695652,1.5,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.6 on the 1–5 scale., 3.9,dis,3.57908498125,3.9,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.5 on the 1–5 scale., 3.7 on the 1–5 scale.,dis,3.5299508,3.7,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.8 out of 5., 1.8,col,2.80329467096774,1.8,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.4 out of 5., 2.6 on the 1–5 scale.,col,3.4455064774193502,2.6,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",1.8 on the 1–5 scale., 2.3 on the 1–5 scale.,loud,1.76603867272727,2.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.4 on the 1–5 scale., 4.2 on the 1–5 scale.,dis,4.35739824761905,4.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.0,4.1,dis,4.00047721764706,4.1,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.2 out of 5.,3.3 on the 1–5 scale.,loud,3.19815784,3.3,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.9,4.0,noi,2.88290394193548,4.0,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.3, 2.1 on the 1–5 scale.,col,2.3002371032258098,2.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.2 out of 5., 2.0,col,2.191607328,2.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.5,3.5 on the 1–5 scale.,noi,2.53690152,3.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 2.5 out of 5.,2.4 on the 1–5 scale.,noi,2.46537786060606,2.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.1 out of 5.,1.9 on the 1–5 scale.,col,2.06719018709677,1.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 2.0 out of 5., 2.5 on the 1–5 scale.,loud,2.04948060625,2.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 1.7 out of 5., 2.5,loud,1.73940610769231,2.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.4 on the 1–5 scale., 1.9,noi,2.3600616000000003,1.9,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 2.1 out of 5., 2.0 on the 1–5 scale.,loud,2.09464721935484,2.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.4 out of 5., 1.7 on the 1–5 scale.,col,2.391544296,1.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.6,3.8 on the 1–5 scale.,noi,2.62232408823529,3.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.7,3.6 on the 1–5 scale.,noi,2.69546925,3.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.5,3.4 on the 1–5 scale.,noi,2.54145064827586,3.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.5 out of 5., 1.7 on the 1–5 scale.,dis,2.45690945806452,1.7,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.5, 4.0,dis,3.4887093241379303,4.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,1.4 on the 1–5 scale., 2.4 on the 1–5 scale.,loud,1.36493312380952,2.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.7 on the 1–5 scale., 1.7 on the 1–5 scale.,col,2.74881351538461,1.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.0, 3.3 on the 1–5 scale.,noi,2.95363102608696,3.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 2.0 out of 5., 1.9,loud,2.012378984,1.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.2 on the 1–5 scale., 2.9,loud,2.20321729677419,2.9,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.8 on the 1–5 scale.,3.7,dis,3.80144526428571,3.7,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.8 on the 1–5 scale., 2.8,col,3.78445454117647,2.8,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.1 out of 5.,3.4,loud,3.07117473125,3.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.5 on the 1–5 scale.,3.2 on the 1–5 scale.,loud,3.49367480625,3.2,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.7 on the 1–5 scale.,3.1 on the 1–5 scale.,noi,2.71222468695652,3.1,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.7 on the 1–5 scale., 4.4,dis,3.68442524375,4.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.5 out of 5.,3.6,loud,3.50014842941177,3.6,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.3 on the 1–5 scale.,3.6,dis,3.26779801935484,3.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 2.8 out of 5.,3.2 on the 1–5 scale.,loud,2.8057013875,3.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.6 on the 1–5 scale.,3.8 on the 1–5 scale.,noi,3.61936299130435,3.8,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.9,2.3 on the 1–5 scale.,dis,2.8518406153846096,2.3,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.5,3.1,noi,2.5352030129032297,3.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.6 on the 1–5 scale.,3.0 on the 1–5 scale.,noi,2.60163932258064,3.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.3 on the 1–5 scale.,3.4,noi,2.25065957391304,3.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.5 on the 1–5 scale.,4.3,dis,2.52882238064516,4.3,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.7, 3.5,dis,2.6804526058823503,3.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.8,3.3 on the 1–5 scale.,noi,2.75087228823529,3.3,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 2.8 out of 5.,3.0 on the 1–5 scale.,noi,2.82328895,3.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 4.2 out of 5.,4.6 on the 1–5 scale.,loud,4.21082179375,4.6,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.2,4.3 on the 1–5 scale.,noi,4.22562526666667,4.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 4.3 out of 5.,4.6,dis,4.31554739354839,4.6,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.2,3.6 on the 1–5 scale.,noi,4.15348288387097,3.6,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.0 on the 1–5 scale.,3.1,loud,4.0391055483871,3.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 1.8 out of 5.,1.7 on the 1–5 scale.,noi,1.828391,1.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.0 on the 1–5 scale.,2.1,noi,2.02077933548387,2.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.0 on the 1–5 scale.,2.5 on the 1–5 scale.,noi,1.98157872941176,2.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.6 out of 5.,2.8,noi,2.636127425,2.8,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.2 on the 1–5 scale.,1.8 on the 1–5 scale.,col,2.18244479354839,1.8,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.2 on the 1–5 scale., 1.8 on the 1–5 scale.,col,2.23946139310345,1.8,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.0 on the 1–5 scale., 2.3 on the 1–5 scale.,col,1.95656308235294,2.3,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.2 on the 1–5 scale., 2.2 on the 1–5 scale.,loud,3.15042327826087,2.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 1.5 out of 5., 2.0 on the 1–5 scale.,dis,1.45926935483871,2.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.6,2.5 on the 1–5 scale.,dis,1.5619332,2.5,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,1.6 on the 1–5 scale.,1.9 on the 1–5 scale.,col,1.6330558774193502,1.9,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.9 out of 5.,4.0 on the 1–5 scale.,noi,2.93283592380952,4.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.3 on the 1–5 scale.,4.4,noi,3.3135529826087,4.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.5 on the 1–5 scale.,3.9,noi,3.4656334903225803,3.9,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.5 on the 1–5 scale., 2.5,col,2.479706272,2.5,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.8 on the 1–5 scale.,2.6 on the 1–5 scale.,dis,1.7891405125,2.6,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.5 out of 5.,3.6 on the 1–5 scale.,loud,3.50886405217391,3.6,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.5,2.5 on the 1–5 scale.,dis,1.450452,2.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.5 on the 1–5 scale.,3.8 on the 1–5 scale.,noi,3.5041522000000005,3.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 1.5 out of 5.,1.4 on the 1–5 scale.,dis,1.53326532258064,1.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.3 out of 5.,2.8 on the 1–5 scale.,loud,3.34008436774194,2.8,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.9,3.0 on the 1–5 scale.,loud,2.94300835483871,3.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.6 on the 1–5 scale.,3.9,noi,3.5733595333333303,3.9,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.0 out of 5.,3.4 on the 1–5 scale.,col,3.0278599826087005,3.4,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",2.8 on the 1–5 scale.,3.3 on the 1–5 scale.,dis,2.8262800387096805,3.3,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.2 on the 1–5 scale.,2.7 on the 1–5 scale.,col,3.15530510714286,2.7,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.3 on the 1–5 scale.,2.1 on the 1–5 scale.,dis,2.27648699230769,2.1,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.6 out of 5.,3.2 on the 1–5 scale.,dis,2.6340927000000005,3.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.4 out of 5.,2.5 on the 1–5 scale.,dis,2.4093462645161297,2.5,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 3.1 out of 5.,2.8 on the 1–5 scale.,col,3.1345273096774195,2.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.9,4.2 on the 1–5 scale.,noi,3.92679185,4.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.0 on the 1–5 scale.,3.0 on the 1–5 scale.,col,1.97093267692308,3.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.0 out of 5.,1.9 on the 1–5 scale.,col,2.0336916941176497,1.9,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",1.6 on the 1–5 scale.,1.8 on the 1–5 scale.,dis,1.55006996774194,1.8,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.8,2.6,loud,3.78622747741935,2.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.8,3.4,loud,3.76359489677419,3.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.6,3.7 on the 1–5 scale.,noi,3.5843508,3.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 4.1 out of 5.,4.0 on the 1–5 scale.,noi,4.08090001904762,4.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.9,4.1 on the 1–5 scale.,noi,3.93598236129032,4.1,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 3.3 out of 5.,3.8,dis,3.2969163870967697,3.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 3.6 out of 5.,4.0,dis,3.64717818064516,4.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",1.9,3.0,noi,1.8911814,3.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.7 on the 1–5 scale.,2.7,dis,3.67292970322581,2.7,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 2.9 out of 5.,2.1 on the 1–5 scale.,loud,2.866186847619049,2.1,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",1.7 on the 1–5 scale.,2.6,col,1.73404055483871,2.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.2 on the 1–5 scale.,4.0,noi,3.2076915826087005,4.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",2.6,2.7,dis,2.568684325,2.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.3 on the 1–5 scale.,3.8 on the 1–5 scale.,noi,3.25928843478261,3.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.1,3.3,noi,3.1472152129032303,3.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",2.4,2.0,dis,2.370726064,2.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.9,3.3,noi,2.900273448,3.3,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.7 on the 1–5 scale.,3.8,noi,3.68457248235294,3.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",2.8,3.8 on the 1–5 scale.,dis,2.80233869090909,3.8,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.8 on the 1–5 scale.,4.2 on the 1–5 scale.,noi,3.77313384375,4.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 3.8 out of 5.,4.0 on the 1–5 scale.,noi,3.8356688,4.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.2 on the 1–5 scale.,4.0 on the 1–5 scale.,dis,4.16941139230769,4.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 4.4 out of 5.,4.3 on the 1–5 scale.,noi,4.416444248,4.3,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.4 on the 1–5 scale.,4.4,loud,4.38028105294118,4.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.3 on the 1–5 scale.,4.0 on the 1–5 scale.,loud,4.2559057741935495,4.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.4 on the 1–5 scale.,3.6 on the 1–5 scale.,col,3.42510954545455,3.6,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.2 on the 1–5 scale., 4.2,dis,3.17033285517241,4.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.1, 1.5,noi,2.1479608173913,1.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.0 on the 1–5 scale.,3.7 on the 1–5 scale.,loud,4.01854273529412,3.7,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.2,3.3,loud,3.24801095172414,3.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.6 on the 1–5 scale.,4.1,loud,3.61559689677419,4.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.1 out of 5.,2.8 on the 1–5 scale.,col,3.07390855,2.8,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 4.2 out of 5.,2.6 on the 1–5 scale.,col,4.20985770588235,2.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.9 on the 1–5 scale.,3.2 on the 1–5 scale.,col,2.87425899310345,3.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.1 on the 1–5 scale., 3.5,dis,2.10015938125,3.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 1.9 out of 5.,2.6 on the 1–5 scale.,noi,1.9055551,2.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.5 on the 1–5 scale.,3.5 on the 1–5 scale.,col,3.5159984827586204,3.5,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.0 on the 1–5 scale.,2.4 on the 1–5 scale.,col,1.97204917692308,2.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.2 out of 5.,3.6 on the 1–5 scale.,noi,3.21895171875,3.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.3 out of 5.,3.2 on the 1–5 scale.,loud,3.30473465806452,3.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.5 on the 1–5 scale.,1.6 on the 1–5 scale.,dis,1.4645723999999998,1.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.5 on the 1–5 scale.,4.1 on the 1–5 scale.,loud,4.4937843166666696,4.1,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 4.6 out of 5.,4.4 on the 1–5 scale.,loud,4.55516030833333,4.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.1,4.4 on the 1–5 scale.,noi,4.106194975,4.4,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 4.5 out of 5.,4.1 on the 1–5 scale.,dis,4.54953275,4.1,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.5,2.7,dis,3.4757039416666697,2.7,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.3 out of 5.,3.8 on the 1–5 scale.,loud,3.34006610833333,3.8,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,1.8,4.2 on the 1–5 scale.,noi,1.7574568083333302,4.2,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 1.5 out of 5.,3.8 on the 1–5 scale.,noi,1.49979269166667,3.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.7, 4.3,dis,3.706461575,4.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.4 on the 1–5 scale.,3.8 on the 1–5 scale.,col,3.3725265583333304,3.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.7 on the 1–5 scale., 3.7,dis,3.72545210833333,3.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",1.2, 1.6 on the 1–5 scale.,noi,1.196338925,1.6,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.4, 4.2 on the 1–5 scale.,noi,4.35960623333333,4.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",4.1 on the 1–5 scale., 2.8,col,4.06955556666667,2.8,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 3.5 out of 5., 2.5 on the 1–5 scale.,col,3.5040702000000006,2.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 4.4 out of 5., 4.1,noi,4.4274294583333305,4.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.3 on the 1–5 scale.,4.1 on the 1–5 scale.,noi,2.30071378333333,4.1,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.3 out of 5.,2.5 on the 1–5 scale.,loud,3.34061859166667,2.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.7 out of 5.,4.4 on the 1–5 scale.,dis,3.67228000833333,4.4,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.1 on the 1–5 scale.,4.1,noi,3.1201187833333304,4.1,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.4 out of 5., 3.3,loud,3.44659974166667,3.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.3 out of 5.,3.4 on the 1–5 scale.,col,3.31171755833333,3.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.1,3.2 on the 1–5 scale.,loud,4.07194253333333,3.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 4.0 out of 5.,3.8,noi,3.98679853333333,3.8,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.3 on the 1–5 scale.,3.8,loud,4.27469529166667,3.8,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.9,3.1 on the 1–5 scale.,col,3.8861440083333294,3.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 3.2 out of 5.,3.6 on the 1–5 scale.,noi,3.19782115,3.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.3 on the 1–5 scale.,4.0 on the 1–5 scale.,col,3.2632452416666697,4.0,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.5 on the 1–5 scale.,3.0,loud,3.48376513333333,3.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.5,2.2 on the 1–5 scale.,col,3.46942430833333,2.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.7 on the 1–5 scale.,3.4 on the 1–5 scale.,loud,3.68653758333333,3.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.8 out of 5.,1.5,col,2.81357495833333,1.5,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.3,4.5 on the 1–5 scale.,dis,4.31155725,4.5,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.1 out of 5., 2.9 on the 1–5 scale.,col,3.0604899916666697,2.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.6,3.0 on the 1–5 scale.,loud,3.56924575,3.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 3.3 out of 5.,3.5 on the 1–5 scale.,noi,3.3196662916666697,3.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.2,4.1 on the 1–5 scale.,loud,4.23572399166667,4.1,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",4.0,4.5 on the 1–5 scale.,dis,4.01532818333333,4.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.3 on the 1–5 scale.,4.0,loud,4.260385875,4.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.4,4.6,dis,4.42277961666667,4.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.3, 2.4 on the 1–5 scale.,loud,3.266851575,2.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",4.2,4.6 on the 1–5 scale.,dis,4.15288715833333,4.6,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 4.1 out of 5., 4.2,noi,4.07216913333333,4.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.3,3.1 on the 1–5 scale.,col,3.2559120166666697,3.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 4.1 out of 5., 4.3,noi,4.0965847416666685,4.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.1,4.6 on the 1–5 scale.,dis,4.1232646916666695,4.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 4.0 out of 5., 3.3 on the 1–5 scale.,loud,3.956811375,3.3,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.2,3.7 on the 1–5 scale.,noi,3.23553554166667,3.7,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.2 on the 1–5 scale., 2.3,col,3.22349555833333,2.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.4 on the 1–5 scale.,3.4 on the 1–5 scale.,col,3.41938399166667,3.4,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 3.5 out of 5.,3.8 on the 1–5 scale.,col,3.45365945,3.8,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.7,4.0 on the 1–5 scale.,noi,3.7426318,4.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.5 out of 5., 2.5,col,3.48911850833333,2.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.7, 2.8 on the 1–5 scale.,loud,3.69950370833333,2.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 3.8 out of 5., 4.4,dis,3.82783279166667,4.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.1,3.9,noi,3.05369995,3.9,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.5, 4.1,noi,3.46653690833333,4.1,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.7 on the 1–5 scale., 3.1,loud,2.70066738333333,3.1,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.7 out of 5., 2.2,loud,3.657179675,2.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.7,4.2 on the 1–5 scale.,dis,3.693632625,4.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 2.4 out of 5., 2.3 on the 1–5 scale.,loud,2.35690788333333,2.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.1 on the 1–5 scale., 2.6 on the 1–5 scale.,loud,3.12607495,2.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 3.9 out of 5.,3.4 on the 1–5 scale.,col,3.93088331666667,3.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 4.5 out of 5.,4.0 on the 1–5 scale.,dis,4.45414919166667,4.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 4.4 out of 5., 4.3,dis,4.37508135833333,4.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.4 on the 1–5 scale.,4.6 on the 1–5 scale.,dis,4.42601754166667,4.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.4 on the 1–5 scale.,4.2 on the 1–5 scale.,loud,4.35751704166667,4.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.4,3.6 on the 1–5 scale.,dis,4.43967765,3.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.9 on the 1–5 scale.,4.4,noi,3.90162159166667,4.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 4.5 out of 5.,4.3 on the 1–5 scale.,dis,4.50950645,4.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 4.3 out of 5.,4.4,loud,4.32736866666667,4.4,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.2,4.3 on the 1–5 scale.,noi,4.169583025,4.3,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 4.2 out of 5., 4.5,noi,4.201005725,4.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.7,4.6 on the 1–5 scale.,loud,3.74668980833333,4.6,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.4 on the 1–5 scale.,4.4 on the 1–5 scale.,dis,4.43872406666667,4.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.9,4.0 on the 1–5 scale.,loud,3.8885244416666698,4.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.9 out of 5.,3.7 on the 1–5 scale.,loud,3.87658520833333,3.7,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.0 on the 1–5 scale.,4.2,dis,3.9935919583333295,4.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.5 on the 1–5 scale.,4.2 on the 1–5 scale.,dis,3.49610325,4.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.2 on the 1–5 scale.,2.4 on the 1–5 scale.,col,3.23238911666667,2.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.4,4.4,noi,3.3502900833333302,4.4,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.0 on the 1–5 scale., 4.2 on the 1–5 scale.,dis,3.97777385,4.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.9 on the 1–5 scale.,4.1 on the 1–5 scale.,noi,2.904373925,4.1,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 4.1 out of 5., 4.2,dis,4.06181103333333,4.2,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.1 out of 5., 4.2,noi,3.126060925,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.4 on the 1–5 scale., 4.0,loud,3.42056944166667,4.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.4,4.2 on the 1–5 scale.,noi,3.3575957,4.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.3,4.5,dis,4.25189268333333,4.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.7, 4.0,noi,2.7228550333333303,4.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.8, 4.2,dis,3.771315875,4.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.3,3.0,loud,3.29486785,3.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.4 out of 5., 4.3,dis,3.37907970833333,4.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.5 out of 5., 2.0,col,2.5240017000000003,2.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 4.0 out of 5.,4.0 on the 1–5 scale.,loud,4.04183508333333,4.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 4.0 out of 5., 4.4,dis,3.9572573666666697,4.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.7 out of 5.,2.4 on the 1–5 scale.,col,2.74011920833333,2.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.2, 3.0 on the 1–5 scale.,loud,3.18664520833333,3.0,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.2 on the 1–5 scale., 1.9 on the 1–5 scale.,col,2.17529853333333,1.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.5,3.4 on the 1–5 scale.,loud,3.46904146666667,3.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 1.5 out of 5., 1.5 on the 1–5 scale.,col,1.47957359166667,1.5,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.8, 4.2,dis,1.78466155,4.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.5 on the 1–5 scale., 3.5,dis,2.5357595,3.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",1.8 on the 1–5 scale.,4.0 on the 1–5 scale.,noi,1.84413145,4.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.3,3.3 on the 1–5 scale.,noi,2.310614075,3.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.3, 3.4 on the 1–5 scale.,col,2.2524510666666697,3.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.3 out of 5.,2.6,loud,3.33224924166667,2.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.4,3.6 on the 1–5 scale.,col,2.36860801666667,3.6,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.5 on the 1–5 scale., 4.3,dis,3.5427183666666697,4.3,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.4,3.2 on the 1–5 scale.,loud,2.40358345833333,3.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",1.6, 3.6 on the 1–5 scale.,dis,1.6437162,3.6,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.6, 2.2,loud,3.6092573083333295,2.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 4.0 out of 5.,4.0 on the 1–5 scale.,dis,4.016543275,4.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.8 on the 1–5 scale.,3.7,dis,1.84909955833333,3.7,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.0 on the 1–5 scale.,1.9 on the 1–5 scale.,col,1.9862444083333304,1.9,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.0 on the 1–5 scale., 3.9,noi,4.02194153333333,3.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 4.0 out of 5.,4.0,loud,4.038045875,4.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.0 on the 1–5 scale., 3.6 on the 1–5 scale.,dis,1.9722728666666696,3.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.5 out of 5.,4.1,noi,2.524266375,4.1,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 3.4 out of 5., 2.5 on the 1–5 scale.,col,3.41531018333333,2.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.7,4.4 on the 1–5 scale.,noi,3.65738560833333,4.4,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.3, 4.5 on the 1–5 scale.,dis,3.27993414166667,4.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 3.6 out of 5., 3.8,noi,3.57049956666667,3.8,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.7,2.6,col,2.6502128666666698,2.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.1 out of 5.,3.6 on the 1–5 scale.,noi,2.1163613166666697,3.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.7 out of 5., 2.4,col,2.6839401,2.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 2.7 out of 5., 4.3 on the 1–5 scale.,noi,2.7384477416666697,4.3,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.9 out of 5.,4.1,dis,2.8618140916666697,4.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.4 on the 1–5 scale.,3.3 on the 1–5 scale.,noi,2.35986201666667,3.3,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.4 on the 1–5 scale., 4.2 on the 1–5 scale.,noi,2.44406808333333,4.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 1.9 out of 5., 2.2,col,1.8963683,2.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.5 on the 1–5 scale.,3.8,noi,2.5047779,3.8,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 2.0 out of 5., 2.5,loud,2.013844125,2.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.9, 4.1 on the 1–5 scale.,dis,3.90515553333333,4.1,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.1 on the 1–5 scale.,4.2 on the 1–5 scale.,dis,4.07773229166667,4.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.2,3.7 on the 1–5 scale.,col,3.20450861666667,3.7,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 2.5 out of 5.,3.9,noi,2.52325965,3.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 1.9 out of 5., 1.9,loud,1.87631356666667,1.9,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.2, 4.3 on the 1–5 scale.,dis,3.17508876666667,4.3,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.3 on the 1–5 scale., 4.3,dis,3.3083348333333302,4.3,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.1,4.2,dis,3.14291613333333,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 2.4 out of 5., 2.0 on the 1–5 scale.,loud,2.4103314416666697,2.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.1 out of 5.,2.5 on the 1–5 scale.,loud,3.1298630166666697,2.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.3 on the 1–5 scale., 4.0,dis,3.2945434833333302,4.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.5 on the 1–5 scale.,3.6,noi,2.50856463333333,3.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.1 out of 5., 4.1,noi,2.09559934166667,4.1,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 1.8 out of 5., 2.1 on the 1–5 scale.,col,1.80373011666667,2.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,1.9, 3.4,noi,1.87590554166667,3.4,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.0 out of 5., 3.4 on the 1–5 scale.,dis,1.9703345666666696,3.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.0, 1.7 on the 1–5 scale.,noi,1.998323425,1.7,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.9 on the 1–5 scale., 3.4 on the 1–5 scale.,dis,3.904703225,3.4,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.8 out of 5.,3.3 on the 1–5 scale.,noi,2.75939879166667,3.3,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.8 out of 5., 2.3,loud,3.753903225,2.3,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.2,2.8 on the 1–5 scale.,noi,2.19117315,2.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.2 out of 5.,3.5 on the 1–5 scale.,dis,2.203528925,3.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.6 out of 5.,4.1 on the 1–5 scale.,dis,2.5793457666666697,4.1,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.7 out of 5., 4.2,dis,3.68598520833333,4.2,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 2.1 out of 5., 2.5 on the 1–5 scale.,noi,2.140472825,2.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.8,3.1 on the 1–5 scale.,noi,2.8163519166666697,3.1,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.7, 4.5,dis,3.72872170833333,4.5,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.3,3.3,col,3.25645525,3.3,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.1,1.9 on the 1–5 scale.,noi,2.060454075,1.9,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 1.2 out of 5., 2.5 on the 1–5 scale.,dis,1.20530665,2.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.6 on the 1–5 scale., 1.4,noi,2.62695296666667,1.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.8 on the 1–5 scale.,3.4 on the 1–5 scale.,col,2.79197511666667,3.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.1 out of 5.,4.2 on the 1–5 scale.,loud,3.0995117083333303,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.8, 2.9,loud,2.84745844166667,2.9,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",1.8 on the 1–5 scale., 2.0 on the 1–5 scale.,col,1.78966915,2.0,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",1.9 on the 1–5 scale., 1.9 on the 1–5 scale.,col,1.8733438916666696,1.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.2 on the 1–5 scale.,3.4,loud,3.17161209166667,3.4,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.3, 3.3,dis,3.27663760833333,3.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.5 on the 1–5 scale., 3.3 on the 1–5 scale.,dis,1.50056813333333,3.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 1.8 out of 5.,2.4,col,1.76588465833333,2.4,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.5 out of 5.,4.3,dis,2.480163075,4.3,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.2 out of 5., 2.6,col,2.2045522,2.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",1.7 on the 1–5 scale., 2.5,col,1.70118300833333,2.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,2.6,3.1,loud,2.5681824416666696,3.1,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.4 on the 1–5 scale.,3.6,loud,3.39773523333333,3.6,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.3 out of 5., 4.0 on the 1–5 scale.,dis,3.27842358333333,4.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.4 out of 5.,4.2 on the 1–5 scale.,dis,3.4132492,4.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.5 out of 5., 2.1 on the 1–5 scale.,col,2.53749985833333,2.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.3 out of 5.,2.3 on the 1–5 scale.,col,2.292036625,2.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.5 out of 5., 3.5,dis,2.48475073333333,3.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.4 on the 1–5 scale.,3.8 on the 1–5 scale.,noi,2.43973625,3.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.0, 4.4 on the 1–5 scale.,noi,2.0190859,4.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 2.5 out of 5., 2.2 on the 1–5 scale.,loud,2.4563765583333304,2.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.1 on the 1–5 scale., 3.5 on the 1–5 scale.,dis,4.0758380833333305,3.5,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 3.1 out of 5., 2.7 on the 1–5 scale.,col,3.08597484166667,2.7,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.3, 2.5 on the 1–5 scale.,loud,3.26339506666667,2.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,1.8, 2.0,loud,1.84443883333333,2.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 2.3 out of 5., 2.4 on the 1–5 scale.,loud,2.31560065833333,2.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.7 on the 1–5 scale.,3.3 on the 1–5 scale.,noi,2.65751551666667,3.3,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.7, 3.6 on the 1–5 scale.,dis,3.70275845833333,3.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,2.8, 2.4 on the 1–5 scale.,loud,2.7506788,2.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.4 out of 5., 3.4,dis,3.3632728833333303,3.4,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.4,3.4,noi,2.42429131666667,3.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.6,3.0 on the 1–5 scale.,loud,3.613322825,3.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.3 out of 5.,2.8 on the 1–5 scale.,col,2.32962875,2.8,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.9 on the 1–5 scale., 3.6,loud,2.878349775,3.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 1.6 out of 5., 2.1 on the 1–5 scale.,col,1.60539365833333,2.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.0 on the 1–5 scale., 4.2 on the 1–5 scale.,noi,3.012339675,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.2 on the 1–5 scale., 2.1,loud,2.23923608333333,2.1,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.1 on the 1–5 scale.,3.6,dis,3.10249146666667,3.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.8 on the 1–5 scale.,3.5 on the 1–5 scale.,loud,3.755089125,3.5,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 3.0 out of 5.,3.8 on the 1–5 scale.,dis,3.0490603916666696,3.8,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.8 out of 5., 1.7 on the 1–5 scale.,col,2.8461121416666697,1.7,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,2.8,4.0,loud,2.84441443333333,4.0,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.5 on the 1–5 scale.,4.1 on the 1–5 scale.,loud,3.462534175,4.1,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.1,3.1 on the 1–5 scale.,loud,2.147344975,3.1,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.4 on the 1–5 scale., 2.3 on the 1–5 scale.,col,3.3621859,2.3,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 1.7 out of 5.,2.8,noi,1.69113931666667,2.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.4 on the 1–5 scale., 3.5,noi,2.37328019166667,3.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,2.8,3.0,loud,2.785730825,3.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.9, 2.5 on the 1–5 scale.,loud,3.85197909166667,2.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 3.9 out of 5.,4.1,noi,3.89984556666667,4.1,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.7, 3.0,col,3.68735843333333,3.0,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.2,3.0,col,2.233046125,3.0,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.0, 3.1,col,2.9956244416666697,3.1,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.8 on the 1–5 scale.,3.5,col,2.79985755833333,3.5,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.5 on the 1–5 scale.,2.6 on the 1–5 scale.,col,2.46797508333333,2.6,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.2,3.5 on the 1–5 scale.,noi,2.2089833,3.5,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.5, 2.1 on the 1–5 scale.,col,2.4508796333333303,2.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 2.3 out of 5.,3.7,noi,2.2874394083333303,3.7,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.0 out of 5., 4.4,dis,3.039392225,4.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.4 out of 5.,4.0 on the 1–5 scale.,dis,3.3967849,4.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.8 on the 1–5 scale., 2.4 on the 1–5 scale.,noi,2.81010136666667,2.4,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.7, 3.1 on the 1–5 scale.,col,2.67176065833333,3.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.5 on the 1–5 scale., 3.0,noi,2.53924428333333,3.0,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.3 out of 5.,3.1 on the 1–5 scale.,col,2.2903356666666697,3.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.4,3.0,col,3.4499648416666697,3.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.6 on the 1–5 scale.,3.8 on the 1–5 scale.,loud,3.61112096666667,3.8,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 2.9 out of 5.,3.8 on the 1–5 scale.,noi,2.93194133333333,3.8,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.3,3.9,noi,3.3361898583333303,3.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 4.5 out of 5.,4.3,loud,4.5277198125,4.3,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",4.5 on the 1–5 scale.,4.5,col,4.4732072,4.5,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,4.6,4.4 on the 1–5 scale.,col,4.59861693333333,4.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",4.7 on the 1–5 scale.,4.7 on the 1–5 scale.,dis,4.66107488888889,4.7,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.8 on the 1–5 scale.,4.4 on the 1–5 scale.,noi,3.84638812,4.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.3,4.2,loud,4.27298489230769,4.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.9,4.4 on the 1–5 scale.,dis,3.9045055333333294,4.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.0,4.2 on the 1–5 scale.,noi,4.0451858133333305,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.3 on the 1–5 scale., 3.6 on the 1–5 scale.,loud,4.28848728571429,3.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",1.4 on the 1–5 scale., 1.4 on the 1–5 scale.,noi,1.38694406666667,1.4,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",4.1, 4.2,col,4.091194625,4.2,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 4.0 out of 5.,4.1 on the 1–5 scale.,col,4.02274896666667,4.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.6 on the 1–5 scale., 4.5 on the 1–5 scale.,noi,4.576777,4.5,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.9 on the 1–5 scale., 3.6,col,3.88588910666667,3.6,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.5 on the 1–5 scale., 4.2,noi,4.52823993846154,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.6 on the 1–5 scale., 3.6 on the 1–5 scale.,loud,2.5861324,3.6,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.5 on the 1–5 scale.,4.0 on the 1–5 scale.,noi,4.48352978571429,4.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.2,4.0,dis,4.210085107692311,4.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 4.1 out of 5.,4.2,dis,4.1361527375,4.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 2.8 out of 5.,1.5 on the 1–5 scale.,loud,2.8454064888888904,1.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.1 on the 1–5 scale.,3.2 on the 1–5 scale.,loud,3.115719625,3.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.4 on the 1–5 scale.,4.3 on the 1–5 scale.,noi,4.3645809692307695,4.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 4.4 out of 5.,3.5,dis,4.40562950666667,3.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.7,2.6 on the 1–5 scale.,loud,2.6586547333333304,2.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",4.2 on the 1–5 scale.,4.5,col,4.20402623333333,4.5,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,4.1,4.4 on the 1–5 scale.,col,4.10892857647059,4.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.7 on the 1–5 scale.,3.2 on the 1–5 scale.,col,3.734772125,3.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.5 on the 1–5 scale.,4.0 on the 1–5 scale.,noi,4.4570798,4.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.5 on the 1–5 scale.,4.6 on the 1–5 scale.,noi,4.45804522857143,4.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.4 on the 1–5 scale.,2.4 on the 1–5 scale.,col,3.40888752,2.4,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.3,2.5 on the 1–5 scale.,col,3.34268935,2.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 1.6 out of 5.,1.9 on the 1–5 scale.,dis,1.61010828,1.9,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.3 on the 1–5 scale.,3.8 on the 1–5 scale.,dis,3.25305205333333,3.8,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.5 out of 5.,3.4 on the 1–5 scale.,loud,3.4865061375,3.4,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.3 out of 5.,4.2 on the 1–5 scale.,noi,3.31738145333333,4.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.1,4.1,dis,3.1428340375,4.1,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 4.1 out of 5.,3.6 on the 1–5 scale.,dis,4.0755697666666695,3.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.6 on the 1–5 scale.,2.7 on the 1–5 scale.,col,2.58804136666667,2.7,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.6 on the 1–5 scale.,4.0 on the 1–5 scale.,loud,3.62355043333333,4.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.6,3.6 on the 1–5 scale.,loud,3.60990976923077,3.6,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.0 out of 5.,4.0 on the 1–5 scale.,loud,3.04629355714286,4.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.8,4.0,noi,3.76687013333333,4.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.3 on the 1–5 scale.,3.1 on the 1–5 scale.,col,2.29953025333333,3.1,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.0 on the 1–5 scale.,3.7 on the 1–5 scale.,loud,3.0391952125,3.7,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.7,4.4 on the 1–5 scale.,noi,4.68037745,4.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",4.7 on the 1–5 scale.,4.5 on the 1–5 scale.,dis,4.67317694666667,4.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 4.5 out of 5.,4.6,noi,4.53513012941177,4.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 4.0 out of 5.,4.1 on the 1–5 scale.,col,3.9943542533333294,4.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.5,4.2,noi,4.47373095,4.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 4.2 out of 5.,4.5 on the 1–5 scale.,loud,4.19360761176471,4.5,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.7 out of 5.,3.8 on the 1–5 scale.,col,3.720889375,3.8,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.9 on the 1–5 scale.,4.1 on the 1–5 scale.,col,3.927081,4.1,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.8,4.5 on the 1–5 scale.,loud,3.75613741666667,4.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.3,4.2 on the 1–5 scale.,noi,4.32713731666667,4.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.4 on the 1–5 scale.,4.3 on the 1–5 scale.,loud,4.42054821333333,4.3,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.9 on the 1–5 scale.,3.6 on the 1–5 scale.,col,2.9416897285714305,3.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.3 out of 5.,2.4 on the 1–5 scale.,col,2.25490537333333,2.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.7,3.8 on the 1–5 scale.,loud,3.73656532,3.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.0,4.1,noi,4.028065125,4.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.9 on the 1–5 scale.,4.2 on the 1–5 scale.,noi,3.887266,4.2,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.7,3.0 on the 1–5 scale.,col,2.6719658,3.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.5 on the 1–5 scale.,4.1 on the 1–5 scale.,loud,3.542734475,4.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.6 on the 1–5 scale.,2.3 on the 1–5 scale.,col,2.56625434666667,2.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 2.1 out of 5.,2.3 on the 1–5 scale.,col,2.08154021428571,2.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.6,4.3,loud,4.55122695714286,4.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 4.1 out of 5.,4.3 on the 1–5 scale.,dis,4.06967233333333,4.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 4.5 out of 5.,4.5,loud,4.53385153333333,4.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.4 on the 1–5 scale.,4.6 on the 1–5 scale.,noi,4.3702796625,4.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.0 on the 1–5 scale.,4.5,noi,4.03167957333333,4.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.9 out of 5.,4.2 on the 1–5 scale.,loud,3.89440543333333,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.4 on the 1–5 scale.,3.6,loud,4.392703,3.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.3,3.9,col,3.2998925857142902,3.9,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.8 out of 5.,4.2,noi,3.78584938333333,4.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.9 out of 5.,3.6,dis,2.945609275,3.6,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.0 out of 5.,4.0 on the 1–5 scale.,dis,2.9642127538461502,4.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.0 on the 1–5 scale.,4.2 on the 1–5 scale.,noi,4.03901764444444,4.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.2 on the 1–5 scale.,4.2 on the 1–5 scale.,dis,2.185402,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.3,3.7 on the 1–5 scale.,loud,3.29144476923077,3.7,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.1 out of 5.,2.5 on the 1–5 scale.,dis,2.09806998461538,2.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.9,4.0,noi,3.93620816,4.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.1 on the 1–5 scale.,2.2 on the 1–5 scale.,col,2.0712671,2.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.4 on the 1–5 scale.,3.0 on the 1–5 scale.,loud,3.445989475,3.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.8 on the 1–5 scale.,3.9 on the 1–5 scale.,noi,2.82577932307692,3.9,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.7 out of 5.,2.2 on the 1–5 scale.,dis,2.7175488933333303,2.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 4.0 out of 5., 4.0,dis,3.986426375,4.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,1.4 on the 1–5 scale., 2.6 on the 1–5 scale.,loud,1.3745389333333302,2.6,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.2 on the 1–5 scale., 4.0,dis,4.236784171428569,4.0,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.6, 1.8 on the 1–5 scale.,col,3.61324581538462,1.8,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.8 on the 1–5 scale., 2.2 on the 1–5 scale.,col,2.7601346571428595,2.2,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.9 out of 5.,4.0 on the 1–5 scale.,noi,3.8929467875,4.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.1 on the 1–5 scale.,4.2,dis,4.128639,4.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.4, 2.7 on the 1–5 scale.,loud,2.40512413333333,2.7,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.5 out of 5.,3.1 on the 1–5 scale.,col,3.4721529733333303,3.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.2 on the 1–5 scale.,3.8 on the 1–5 scale.,col,3.1918576533333303,3.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 3.9 out of 5.,3.9 on the 1–5 scale.,dis,3.9481828125,3.9,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",4.0, 4.4 on the 1–5 scale.,dis,4.011163642857141,4.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.4, 1.5 on the 1–5 scale.,col,2.43256564285714,1.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",1.4, 1.9,loud,1.4474525,1.9,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.3 on the 1–5 scale., 3.5,dis,3.30051932,3.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",1.5, 2.2 on the 1–5 scale.,noi,1.4986707875,2.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",2.2 on the 1–5 scale., 3.8,dis,2.2384750833333302,3.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.0 on the 1–5 scale., 2.3 on the 1–5 scale.,noi,2.04963186153846,2.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.5, 2.0,col,2.47819121176471,2.0,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",2.4, 4.1,dis,2.4051402000000004,4.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.6, 3.6 on the 1–5 scale.,noi,3.6166970888888894,3.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.4, 3.0 on the 1–5 scale.,col,3.4156980857142902,3.0,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.3, 3.2 on the 1–5 scale.,col,3.27156838571429,3.2,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 2.2 out of 5., 3.5,loud,2.19369552307692,3.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",1.6, 2.0 on the 1–5 scale.,dis,1.6391793866666695,2.0,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.7 out of 5., 2.1 on the 1–5 scale.,col,2.70144186666667,2.1,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,2.6 on the 1–5 scale., 1.6 on the 1–5 scale.,loud,2.58883565333333,1.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.3, 2.1 on the 1–5 scale.,col,2.3195720933333304,2.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.9 on the 1–5 scale.,3.2,col,2.88874956666667,3.2,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,2.4, 3.0 on the 1–5 scale.,noi,2.3724809375,3.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.9 on the 1–5 scale., 3.8,dis,2.9130525,3.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.5 on the 1–5 scale.,3.0 on the 1–5 scale.,noi,2.51051412941176,3.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.4 out of 5.,4.2 on the 1–5 scale.,noi,3.39923155,4.2,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.9 out of 5.,4.2 on the 1–5 scale.,dis,2.9204910666666697,4.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 3.2 out of 5.,3.9 on the 1–5 scale.,dis,3.21794164,3.9,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.8 out of 5.,2.8 on the 1–5 scale.,dis,2.7604818266666697,2.8,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.9 on the 1–5 scale., 4.3 on the 1–5 scale.,dis,3.8791286,4.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 1.4 out of 5., 1.6 on the 1–5 scale.,loud,1.35189516,1.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.2 out of 5., 3.8 on the 1–5 scale.,noi,2.1872571058823502,3.8,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.6 on the 1–5 scale., 3.7 on the 1–5 scale.,dis,3.63041709230769,3.7,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.2 on the 1–5 scale., 1.5 on the 1–5 scale.,col,2.24269372,1.5,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.0 on the 1–5 scale., 1.7 on the 1–5 scale.,col,3.01819323333333,1.7,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.4 out of 5., 3.5,dis,2.3804224,3.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 1.4 out of 5., 1.5 on the 1–5 scale.,loud,1.3801722666666698,1.5,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.6 on the 1–5 scale.,3.9,noi,3.614683675,3.9,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.0 out of 5.,2.4 on the 1–5 scale.,col,2.96040109333333,2.4,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.2 on the 1–5 scale.,4.3 on the 1–5 scale.,dis,3.18995332,4.3,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,2.7 on the 1–5 scale.,2.2,loud,2.663918125,2.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.1 on the 1–5 scale.,3.5 on the 1–5 scale.,noi,3.07789332941176,3.5,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.6,4.2 on the 1–5 scale.,dis,3.56396838333333,4.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.4 out of 5.,3.5,loud,3.3541361000000003,3.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.4,3.0,loud,3.4492609,3.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.9 on the 1–5 scale.,3.2 on the 1–5 scale.,col,2.875714875,3.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.0 on the 1–5 scale.,3.5,dis,2.9654287125,3.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.0 out of 5., 3.9 on the 1–5 scale.,dis,2.9723895833333303,3.9,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.0 out of 5.,2.6 on the 1–5 scale.,col,3.0362028,2.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",1.9 on the 1–5 scale., 1.9 on the 1–5 scale.,col,1.8545936,1.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",2.9,2.7 on the 1–5 scale.,loud,2.89230265333333,2.7,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.2 out of 5., 2.9 on the 1–5 scale.,dis,3.22521557333333,2.9,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.3 out of 5.,3.1 on the 1–5 scale.,noi,2.33027895555556,3.1,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.4,2.8 on the 1–5 scale.,loud,3.4177068,2.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.5 on the 1–5 scale.,1.6 on the 1–5 scale.,dis,1.5484893166666698,1.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.2,3.3 on the 1–5 scale.,noi,3.17127632307692,3.3,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.0 out of 5.,1.8 on the 1–5 scale.,col,2.03462672,1.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 1.5 out of 5., 1.6 on the 1–5 scale.,dis,1.51936832307692,1.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 1.7 out of 5.,2.3 on the 1–5 scale.,col,1.72194037333333,2.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 1.9 out of 5.,1.7 on the 1–5 scale.,dis,1.91783,1.7,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,1.8 on the 1–5 scale.,1.8 on the 1.8 scale.,col,1.764578675,1.8,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.6 out of 5.,3.3 on the 1–5 scale.,dis,3.62452646153846,3.3,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 3.4 out of 5.,3.6,dis,3.42295113333333,3.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.9,3.4,col,2.9166682999999995,3.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.6,3.5,loud,3.64602064,3.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,1.9,1.8 on the 1–5 scale.,noi,1.8911002307692304,1.8,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.3 out of 5.,3.6 on the 1–5 scale.,loud,3.32479352307692,3.6,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",3.3 on the 1–5 scale.,3.8 on the 1–5 scale.,dis,3.33943316,3.8,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,1.6,1.9,noi,1.62237793846154,1.9,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",4.5 on the 1–5 scale.,4.4,dis,4.4915101875,4.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.7 on the 1–5 scale.,4.5 on the 1–5 scale.,col,3.66980195,4.5,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",4.5 on the 1–5 scale.,4.6 on the 1–5 scale.,loud,4.48074404,4.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,3.9 on the 1–5 scale.,4.3 on the 1–5 scale.,col,3.9118278285714303,4.3,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",1.9 on the 1–5 scale.,2.6 on the 1–5 scale.,col,1.8534723833333304,2.6,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.9 on the 1–5 scale.,4.5 on the 1–5 scale.,noi,3.89496333333333,4.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.3 out of 5.,2.8 on the 1–5 scale.,dis,2.2711422000000003,2.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 1.4 out of 5.,0.4 on the 1–5 scale.,dis,1.3795221466666698,0.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.3,3.4,loud,3.3081235428571403,3.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.1 on the 1–5 scale.,3.8,loud,3.1038791076923102,3.8,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 3.0 out of 5.,3.0 on the 1–5 scale.,loud,3.03104321666667,3.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.7 out of 5.,3.7 on the 1–5 scale.,loud,3.7294593066666697,3.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 4.3 out of 5.,4.3 on the 1–5 scale.,noi,4.31866796,4.3,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.9 on the 1–5 scale.,2.2 on the 1–5 scale.,dis,2.87829056,2.2,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.4,4.1 on the 1–5 scale.,noi,4.37977982857143,4.1,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.8 out of 5.,3.7 on the 1–5 scale.,loud,3.784358175,3.7,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.7,2.8 on the 1–5 scale.,col,2.6790360714285697,2.8,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",2.2,3.1 on the 1–5 scale.,dis,2.20813421538462,3.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.1 on the 1–5 scale.,4.0 on the 1–5 scale.,noi,4.1323409692307695,4.0,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.6 on the 1–5 scale.,2.6 on the 1–5 scale.,col,2.6179746,2.6,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,1.4,1.8 on the 1–5 scale.,col,1.41241,1.8,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",3.5,3.7 on the 1–5 scale.,noi,3.53383229333333,3.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 3.8 out of 5.,3.7,noi,3.80331966666667,3.7,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",1.8,2.2 on the 1–5 scale.,dis,1.83074664615385,2.2,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 4.2 out of 5.,4.2 on the 1–5 scale.,dis,4.18596604,4.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.4 out of 5.,2.7 on the 1–5 scale.,loud,3.43893478571428,2.7,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.4 out of 5.,3.4,loud,3.3945328875,3.4,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.7,3.6,loud,3.7221907875,3.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.5 on the 1–5 scale.,2.2 on the 1–5 scale.,col,2.45715896666667,2.2,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.2 on the 1–5 scale.,2.1,col,2.21218737333333,2.1,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.2,1.9,col,2.2230031125,1.9,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",2.3, 2.5 on the 1–5 scale.,col,2.31424124,2.5,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,3.8 on the 1–5 scale.,4.0 on the 1–5 scale.,noi,3.79669938571429,4.0,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.0 out of 5.,3.1,loud,2.968938771428569,3.1,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 1.6 out of 5.,1.7 on the 1–5 scale.,dis,1.5835247625,1.7,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",3.1 on the 1–5 scale.,3.4,loud,3.09108363529412,3.4,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.0 out of 5.,1.9 on the 1–5 scale.,col,2.0242134833333303,1.9,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 2.9 out of 5.,2.2 on the 1–5 scale.,loud,2.9414771,2.2,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 3.5 out of 5.,3.3,noi,3.53165337333333,3.3,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 2.2 out of 5.,1.9 on the 1–5 scale.,dis,2.2365431333333303,1.9,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 1.7 out of 5., 1.4 on the 1–5 scale.,loud,1.68759924705882,1.4,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.8 out of 5., 4.0 on the 1–5 scale.,dis,2.78518208571429,4.0,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,4.1,4.2 on the 1–5 scale.,noi,4.06368964615385,4.2,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 4.2 out of 5., 4.3,noi,4.225142242857141,4.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,1.9,2.5 on the 1–5 scale.,col,1.9312101125,2.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.7 on the 1–5 scale.,3.7,loud,3.70750510666667,3.7,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.2 on the 1–5 scale.,4.4 on the 1–5 scale.,dis,3.2100999625,4.4,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.5 on the 1–5 scale.,1.8 on the 1–5 scale.,col,2.4571911,1.8,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 3.4 out of 5.,4.7 on the 1–5 scale.,dis,3.39907588571429,4.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.2 on the 1–5 scale.,4.1 on the 1–5 scale.,noi,4.16160603333333,4.1,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 3.8 out of 5.,4.0 on the 1–5 scale.,col,3.78031409333333,4.0,success
+dim_numeric,loud,"On a 1–5 scale, how would you score the loudness quality of the degraded audio?",I would rate this dimension as 4.1 out of 5.,4.2,loud,4.07256381428571,4.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.2 on the 1–5 scale.,3.9 on the 1–5 scale.,loud,3.24387098666667,3.9,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",I would rate this dimension as 1.8 out of 5.,2.5 on the 1–5 scale.,dis,1.80946105,2.5,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",I would rate this dimension as 2.2 out of 5.,2.2 on the 1–5 scale.,dis,2.1607010125,2.2,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,3.2 on the 1–5 scale.,3.4 on the 1–5 scale.,loud,3.18506181333333,3.4,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",4.5,4.4 on the 1–5 scale.,col,4.53906553846154,4.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.2,4.1,dis,2.22890472307692,4.1,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.3,4.6 on the 1–5 scale.,noi,4.323862025,4.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.4 on the 1–5 scale.,3.6 on the 1–5 scale.,col,3.399160025,3.6,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 4.6 out of 5.,4.3 on the 1–5 scale.,noi,4.605534353846151,4.3,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,4.2 on the 1–5 scale.,4.1 on the 1–5 scale.,col,4.16494396,4.1,success
+dim_numeric,dis,"On a 1–5 scale, how smooth is the degraded audio in terms of discontinuities?",4.4 on the 1–5 scale.,4.4 on the 1–5 scale.,dis,4.3741466,4.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.2 on the 1–5 scale.,4.6 on the 1–5 scale.,loud,4.243636799999999,4.6,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.3,3.4 on the 1–5 scale.,dis,2.27491601538462,3.4,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.1 on the 1–5 scale.,2.5 on the 1–5 scale.,dis,2.1342429833333303,2.5,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",2.1 on the 1–5 scale.,1.7 on the 1–5 scale.,dis,2.135306825,1.7,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",2.7 on the 1–5 scale.,4.0 on the 1–5 scale.,noi,2.7092779333333303,4.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 3.9 out of 5.,4.4,noi,3.9235819833333294,4.4,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 4.2 out of 5.,4.5 on the 1–5 scale.,loud,4.19372806666667,4.5,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,4.4 on the 1–5 scale.,4.0 on the 1–5 scale.,loud,4.40797881666667,4.0,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",4.2 on the 1–5 scale.,4.0 on the 1–5 scale.,noi,4.1848179066666695,4.0,success
+dim_numeric,dis,"Rate the discontinuity (glitches, dropouts) of the degraded audio on a 1–5 scale (higher means fewer discontinuities).",3.0 on the 1–5 scale.,3.5 on the 1–5 scale.,dis,2.958042525,3.5,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,I would rate this dimension as 1.9 out of 5.,2.3 on the 1–5 scale.,col,1.94524841538462,2.3,success
+dim_numeric,noi,"On a 1–5 scale, how would you score the noisiness of the degraded signal?",I would rate this dimension as 2.6 out of 5.,3.6 on the 1–5 scale.,noi,2.6046114941176497,3.6,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",I would rate this dimension as 2.5 out of 5.,2.9 on the 1–5 scale.,col,2.50861173333333,2.9,success
+dim_numeric,loud,Rate the loudness quality of the degraded speech on a 1–5 scale (higher means more comfortable loudness).,I would rate this dimension as 3.7 out of 5.,4.1 on the 1–5 scale.,loud,3.69403476666667,4.1,success
+dim_numeric,noi,Rate the speech quality in terms of noisiness of the degraded audio on a 1–5 scale (higher means less annoying noise).,I would rate this dimension as 4.0 out of 5.,4.2 on the 1–5 scale.,noi,4.00064934666667,4.2,success
+dim_numeric,col,Rate the coloration (timbre / bandwidth artifacts) of the degraded speech on a 1–5 scale (higher means more natural timbre).,2.1 on the 1–5 scale.,2.7 on the 1–5 scale.,col,2.09930816,2.7,success
+dim_numeric,col,"On a 1–5 scale, how is the coloration quality of the degraded audio?",3.3,2.7 on the 1–5 scale.,col,3.32732101333333,2.7,success

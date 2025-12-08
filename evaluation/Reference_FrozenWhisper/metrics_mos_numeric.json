@@ -1,0 +1,20 @@
+{
+  "task": "mos_numeric",
+  "dim_metrics": {
+    "mos": {
+      "n": 480,
+      "mae": 0.4655034639881813,
+      "rmse": 0.60708058550162,
+      "pearson_r": 0.830823417304895,
+      "spearman_rho": 0.8139740894000513,
+      "n_total": 480,
+      "n_no_number": 0
+    }
+  },
+  "multi_dim_sample_stats": {
+    "n_samples": 0,
+    "n_full": 0,
+    "n_partial": 0,
+    "n_none": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "task": "explanatory",
+  "dim_metrics": {
+    "mos": {
+      "n": 712,
+      "mae": 0.5328056887371335,
+      "rmse": 0.6917735824811913,
+      "pearson_r": 0.7650289111595755,
+      "spearman_rho": 0.7623182948555737,
+      "n_total": 712,
+      "n_no_number": 0
+    }
+  },
+  "multi_dim_sample_stats": {
+    "n_samples": 0,
+    "n_full": 0,
+    "n_partial": 0,
+    "n_none": 0
+  }
+}
