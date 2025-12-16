@@ -97,3 +97,16 @@ In order to train the model on NISQA train, validation and test set, please run 
   python train.py --training_type full_reference_ast --freeze_encoder False 
 ```
 Use any of ["full_reference_ast", "no_reference_ast", "full_reference_whisper"] training type and keep the audio encoder frozen or trainable (by default finetune query projection layers only). Also change the dataset path and training params as needed.
+## Citation
+If you find this repository useful in your research, please consider citing the following work:
+```text
+@misc{monjur2025speechqualityllmllmbasedmultimodalassessment,
+      title={SpeechQualityLLM: LLM-Based Multimodal Assessment of Speech Quality}, 
+      author={Mahathir Monjur and Shahriar Nirjon},
+      year={2025},
+      eprint={2512.08238},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD},
+      url={https://arxiv.org/abs/2512.08238}, 
+}
+```
