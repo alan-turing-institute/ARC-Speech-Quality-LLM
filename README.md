@@ -81,6 +81,7 @@ Speech-Quality-LLM/
 - Download the trained checkpoint and put them inside the results directory (https://drive.google.com/drive/folders/1vzcmHgOIpqVe6KzQBUfI5lHOd4slUREO?usp=sharing)
 
 ## Evaluation
+For repeatability, append the following with `--no_temperature True`
 1. In order to run the Full-reference model with finetuned AST, please run the evaluate.py with the necessary degraded audio path, reference audio path, prompt arguments, as well as checkpoint path if needed. Example:
 ```text
   python evaluate.py --deg_path Dataset/NISQA_Corpus/NISQA_TEST_FOR/deg/c00001_for_cnv_m_1035_02.wav --ref_path Dataset/NISQA_Corpus/NISQA_TEST_FOR/ref/for_cnv_m_1035_02.wav --prompt "Explain the main causes of quality degradation in the degraded speech compared to the reference, then provide an overall MOS score between 1 and 5."
