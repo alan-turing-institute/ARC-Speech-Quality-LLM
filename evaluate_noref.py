@@ -1,32 +1,30 @@
+import argparse
+import json
 import os
 import re
-import json
-import argparse
 from collections import defaultdict
 
 import numpy as np
 import pandas as pd
-from tqdm import tqdm
-from scipy.stats import spearmanr
-
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader
+from peft import LoraConfig, get_peft_model
 from safetensors.torch import load_file
-
+from scipy.stats import spearmanr
+from torch.utils.data import DataLoader
+from tqdm import tqdm
 from transformers import (
     AutoModelForAudioClassification,
     AutoModelForCausalLM,
     BitsAndBytesConfig,
 )
-from peft import LoraConfig, get_peft_model
 
 from dataloader_noref import (
-    NISQAAudioQADataset,
     AST_DIR,
+    AST_FEATURE_EXTRACTOR,
     LLAMA_DIR,
     TOKENIZER,
-    AST_FEATURE_EXTRACTOR,
+    NISQAAudioQADataset,
 )
 
 if TOKENIZER.pad_token is None:
@@ -50,11 +48,11 @@ class AudioProjectionLayer(nn.Module):
 
     def forward(self, x):
         # x: [B, T, C_in]
-        x = x.transpose(-2, -1)          # [B, C_in, T]
-        x = self.pool(x)                 # [B, C_in, T_p]
-        x = x.transpose(-2, -1)          # [B, T_p, C_in]
+        x = x.transpose(-2, -1)  # [B, C_in, T]
+        x = self.pool(x)  # [B, C_in, T_p]
+        x = x.transpose(-2, -1)  # [B, T_p, C_in]
         x = self.layer_norm(x)
-        x = self.linear_projection(x)    # [B, T_p, C_out]
+        x = self.linear_projection(x)  # [B, T_p, C_out]
         return x
 
 
@@ -99,7 +97,6 @@ class SpeechQualityLLM(nn.Module):
         noisy_tokens = self.audio_encoder(noisy_features).last_hidden_state
         projected_noisy_audio = self.audio_projection_layer(noisy_tokens)
 
-
         tok_emb = self.llm.get_input_embeddings()
         speech_quality_embeds = tok_emb(speech_quality_ids)
         prompt_embeds = tok_emb(prompt_ids)
@@ -132,7 +129,7 @@ class SpeechQualityLLM(nn.Module):
             attention_mask=attention_mask,
         )
 
-        total_audio_tokens = noisy_audio_token_len 
+        total_audio_tokens = noisy_audio_token_len
         query_embeds = torch.cat(
             (
                 prompt_embeds,
@@ -240,8 +237,8 @@ def load_checkpoint(model: nn.Module, checkpoint_path: str, device: torch.device
     missing, unexpected = model.load_state_dict(state_dict, strict=False)
     print(f"  Missing keys: {len(missing)}, Unexpected keys: {len(unexpected)}")
 
-    #print("  Missing keys:", missing)
-    #print("  Unexpected keys:", unexpected)
+    # print("  Missing keys:", missing)
+    # print("  Unexpected keys:", unexpected)
 
 
 def pad_sequence_start(sequences, batch_first=False, padding_value=0.0):
@@ -285,9 +282,7 @@ def collate_fn_eval(batch):
     prompt_ids = [item["prompt_ids"] for item in batch]
     prompt_attention_mask = [item["prompt_attention_mask"] for item in batch]
     end_prompt_ids = [item["end_prompt_ids"] for item in batch]
-    end_prompt_attention_mask = [
-        item["end_prompt_attention_mask"] for item in batch
-    ]
+    end_prompt_attention_mask = [item["end_prompt_attention_mask"] for item in batch]
 
     speech_quality_ids = pad_sequence_start(
         [torch.tensor(x) for x in speech_quality_ids],
@@ -347,6 +342,7 @@ def move_to_device(batch, device):
             out[k] = v
     return out
 
+
 _float_regex = re.compile(r"[-+]?\d*\.?\d+")
 DIM_ORDER_MULTI = ["mos", "noi", "col", "dis", "loud"]
 
@@ -381,7 +377,7 @@ def compute_regression_metrics(y_true, y_pred):
     assert y_true.shape == y_pred.shape
     diff = y_pred - y_true
     mae = float(np.mean(np.abs(diff)))
-    rmse = float(np.sqrt(np.mean(diff ** 2)))
+    rmse = float(np.sqrt(np.mean(diff**2)))
 
     if y_true.size >= 2:
         pearson_r = float(np.corrcoef(y_true, y_pred)[0, 1])
@@ -433,6 +429,7 @@ def evaluate_single_task(
     test_loader: DataLoader,
     device: torch.device,
     max_batches: int = None,
+    no_temperature: bool = False,
 ):
     """
     Evaluate the model on a dataset where allowed_tasks=(task_name,).
@@ -484,6 +481,7 @@ def evaluate_single_task(
                 max_length=query_embeds.shape[1] + 64,
                 pad_token_id=TOKENIZER.pad_token_id,
                 eos_token_id=TOKENIZER.eos_token_id,
+                do_sample=not no_temperature,
             )
             generated = TOKENIZER.batch_decode(gen_ids, skip_special_tokens=True)
 
@@ -588,7 +586,7 @@ def evaluate_single_task(
 
                 elif task_name == "multi_dim":
                     multi_dim_sample_stats["n_samples"] += 1
-                    if len(floats) > 5: # Check for other floats
+                    if len(floats) > 5:  # Check for other floats
                         floats = floats[-5:]
                     n_found = len(floats)
                     if n_found == 0:
@@ -614,9 +612,11 @@ def evaluate_single_task(
                                 "dim": dim,
                                 "y_true": y_true,
                                 "y_pred": y_pred,
-                                "status": "success"
-                                if n_found == len(DIM_ORDER_MULTI)
-                                else "partial",
+                                "status": (
+                                    "success"
+                                    if n_found == len(DIM_ORDER_MULTI)
+                                    else "partial"
+                                ),
                             }
                         else:
                             bucket.n_no_number += 1
@@ -675,10 +675,20 @@ def evaluate_single_task(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Per-task evaluation of SpeechQualityLLM on NISQA.")
-    parser.add_argument("--csv_path", type=str, default="Dataset/NISQA_Corpus/NISQA_corpus_file.csv")
-    parser.add_argument("--dataset_split", type=str, default="TEST", choices=["TRAIN", "VAL", "TEST"])
-    parser.add_argument("--checkpoint_path", type=str, default="results/NoReference_FrozenAST/checkpoint-10240")
+    parser = argparse.ArgumentParser(
+        description="Per-task evaluation of SpeechQualityLLM on NISQA."
+    )
+    parser.add_argument(
+        "--csv_path", type=str, default="Dataset/NISQA_Corpus/NISQA_corpus_file.csv"
+    )
+    parser.add_argument(
+        "--dataset_split", type=str, default="TEST", choices=["TRAIN", "VAL", "TEST"]
+    )
+    parser.add_argument(
+        "--checkpoint_path",
+        type=str,
+        default="results/NoReference_FrozenAST/checkpoint-10240",
+    )
     parser.add_argument("--batch_size", type=int, default=4)
     parser.add_argument("--target_sr", type=int, default=16000)
     parser.add_argument("--target_duration", type=float, default=10.0)
@@ -689,10 +699,18 @@ def main():
         default="mos_numeric,dim_numeric,dim_categ,multi_dim,explanatory",
         help="Comma-separated list of tasks to evaluate.",
     )
-    parser.add_argument("--output_dir", type=str, default="evaluation/NoReference_FrozenAST")
+    parser.add_argument(
+        "--output_dir", type=str, default="evaluation/NoReference_FrozenAST"
+    )
+    parser.add_argument(
+        "--no_temperature",
+        type=bool,
+        default=False,
+        help="Whether to disable sampling and use greedy decoding.",
+    )
     args = parser.parse_args()
 
-    os.makedirs(args.output_dir, exist_ok=True)
+    os.makedirs(f"{args.output_dir}_temp_{not args.no_temperature}", exist_ok=True)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
@@ -727,7 +745,12 @@ def main():
         )
 
         metrics_task, multi_stats, prediction_rows = evaluate_single_task(
-            task_name, model, test_loader, device, max_batches=args.max_batches
+            task_name,
+            model,
+            test_loader,
+            device,
+            max_batches=args.max_batches,
+            no_temperature=args.no_temperature,
         )
 
         # Save per-task artifacts
@@ -767,8 +790,6 @@ def main():
                 f"Pearson={pr_str} Spearman={sr_str}"
             )
 
-
-    
     metrics_all_path = os.path.join(args.output_dir, "metrics_all.json")
     with open(metrics_all_path, "w") as f:
         json.dump(metrics_all, f, indent=2)

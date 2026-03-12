@@ -1,33 +1,31 @@
+import argparse
+import json
 import os
 import re
-import json
-import argparse
 from collections import defaultdict
 
 import numpy as np
 import pandas as pd
-from tqdm import tqdm
-from scipy.stats import spearmanr
-
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader
+from peft import LoraConfig, get_peft_model
 from safetensors.torch import load_file
-
+from scipy.stats import spearmanr
+from torch.utils.data import DataLoader
+from tqdm import tqdm
 from transformers import (
-    WhisperModel,
     AutoModelForCausalLM,
     BitsAndBytesConfig,
-    WhisperProcessor
+    WhisperModel,
+    WhisperProcessor,
 )
-from peft import LoraConfig, get_peft_model
 
 from src.dataloader_ref_whisper import (
-    NISQAAudioQADataset,
-    WHISPER_DIR,
     LLAMA_DIR,
     TOKENIZER,
+    WHISPER_DIR,
     WHISPER_FEATURE_EXTRACTOR,
+    NISQAAudioQADataset,
 )
 
 if TOKENIZER.pad_token is None:
@@ -51,11 +49,11 @@ class AudioProjectionLayer(nn.Module):
 
     def forward(self, x):
         # x: [B, T, C_in]
-        x = x.transpose(-2, -1)          # [B, C_in, T]
-        x = self.pool(x)                 # [B, C_in, T_p]
-        x = x.transpose(-2, -1)          # [B, T_p, C_in]
+        x = x.transpose(-2, -1)  # [B, C_in, T]
+        x = self.pool(x)  # [B, C_in, T_p]
+        x = x.transpose(-2, -1)  # [B, T_p, C_in]
         x = self.layer_norm(x)
-        x = self.linear_projection(x)    # [B, T_p, C_out]
+        x = self.linear_projection(x)  # [B, T_p, C_out]
         return x
 
 
@@ -223,7 +221,9 @@ def load_modules():
         quantization_config=bnb_config,
     )
 
-    whisper_encoder = WhisperModel.from_pretrained("openai/whisper-large-v2", cache_dir="./whisper-large").get_encoder()
+    whisper_encoder = WhisperModel.from_pretrained(
+        "openai/whisper-large-v2", cache_dir="./whisper-large"
+    ).get_encoder()
 
     return llm, whisper_encoder
 
@@ -251,8 +251,8 @@ def load_checkpoint(model: nn.Module, checkpoint_path: str, device: torch.device
     missing, unexpected = model.load_state_dict(state_dict, strict=False)
     print(f"  Missing keys: {len(missing)}, Unexpected keys: {len(unexpected)}")
 
-    #print("  Missing keys:", missing)
-    #print("  Unexpected keys:", unexpected)
+    # print("  Missing keys:", missing)
+    # print("  Unexpected keys:", unexpected)
 
 
 def pad_sequence_start(sequences, batch_first=False, padding_value=0.0):
@@ -280,9 +280,21 @@ def collate_fn_eval(batch):
     """
     Collate function for evaluation (mirrors training collate_fn).
     """
-    whisper_processor = WhisperProcessor.from_pretrained("openai/whisper-large-v2", cache_dir=WHISPER_DIR)
-    noisy_feature = [whisper_processor.feature_extractor.pad({"input_features": item['noisy_features']}, return_tensors="pt").input_features for item in batch]
-    reference_feature = [whisper_processor.feature_extractor.pad({"input_features": item['reference_features']}, return_tensors="pt").input_features for item in batch]
+    whisper_processor = WhisperProcessor.from_pretrained(
+        "openai/whisper-large-v2", cache_dir=WHISPER_DIR
+    )
+    noisy_feature = [
+        whisper_processor.feature_extractor.pad(
+            {"input_features": item["noisy_features"]}, return_tensors="pt"
+        ).input_features
+        for item in batch
+    ]
+    reference_feature = [
+        whisper_processor.feature_extractor.pad(
+            {"input_features": item["reference_features"]}, return_tensors="pt"
+        ).input_features
+        for item in batch
+    ]
 
     noisy_features = torch.stack(noisy_feature)
     reference_features = torch.stack(reference_feature)
@@ -294,9 +306,7 @@ def collate_fn_eval(batch):
     prompt_ids = [item["prompt_ids"] for item in batch]
     prompt_attention_mask = [item["prompt_attention_mask"] for item in batch]
     end_prompt_ids = [item["end_prompt_ids"] for item in batch]
-    end_prompt_attention_mask = [
-        item["end_prompt_attention_mask"] for item in batch
-    ]
+    end_prompt_attention_mask = [item["end_prompt_attention_mask"] for item in batch]
 
     speech_quality_ids = pad_sequence_start(
         [torch.tensor(x) for x in speech_quality_ids],
@@ -357,6 +367,7 @@ def move_to_device(batch, device):
             out[k] = v
     return out
 
+
 _float_regex = re.compile(r"[-+]?\d*\.?\d+")
 DIM_ORDER_MULTI = ["mos", "noi", "col", "dis", "loud"]
 
@@ -391,7 +402,7 @@ def compute_regression_metrics(y_true, y_pred):
     assert y_true.shape == y_pred.shape
     diff = y_pred - y_true
     mae = float(np.mean(np.abs(diff)))
-    rmse = float(np.sqrt(np.mean(diff ** 2)))
+    rmse = float(np.sqrt(np.mean(diff**2)))
 
     if y_true.size >= 2:
         pearson_r = float(np.corrcoef(y_true, y_pred)[0, 1])
@@ -443,6 +454,7 @@ def evaluate_single_task(
     test_loader: DataLoader,
     device: torch.device,
     max_batches: int = None,
+    no_temperature: bool = False,
 ):
     """
     Evaluate the model on a dataset where allowed_tasks=(task_name,).
@@ -495,6 +507,7 @@ def evaluate_single_task(
                 max_length=query_embeds.shape[1] + 64,
                 pad_token_id=TOKENIZER.pad_token_id,
                 eos_token_id=TOKENIZER.eos_token_id,
+                do_sample=not no_temperature,
             )
             generated = TOKENIZER.batch_decode(gen_ids, skip_special_tokens=True)
 
@@ -599,7 +612,7 @@ def evaluate_single_task(
 
                 elif task_name == "multi_dim":
                     multi_dim_sample_stats["n_samples"] += 1
-                    if len(floats) > 5: # Check for other floats
+                    if len(floats) > 5:  # Check for other floats
                         floats = floats[-5:]
                     n_found = len(floats)
                     if n_found == 0:
@@ -625,9 +638,11 @@ def evaluate_single_task(
                                 "dim": dim,
                                 "y_true": y_true,
                                 "y_pred": y_pred,
-                                "status": "success"
-                                if n_found == len(DIM_ORDER_MULTI)
-                                else "partial",
+                                "status": (
+                                    "success"
+                                    if n_found == len(DIM_ORDER_MULTI)
+                                    else "partial"
+                                ),
                             }
                         else:
                             bucket.n_no_number += 1
@@ -687,10 +702,20 @@ def evaluate_single_task(
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Per-task evaluation of SpeechQualityLLM on NISQA.")
-    parser.add_argument("--csv_path", type=str, default="Dataset/NISQA_Corpus/NISQA_corpus_file.csv")
-    parser.add_argument("--dataset_split", type=str, default="TEST", choices=["TRAIN", "VAL", "TEST"])
-    parser.add_argument("--checkpoint_path", type=str, default="results/Reference_FrozenWhisper/checkpoint-6144")
+    parser = argparse.ArgumentParser(
+        description="Per-task evaluation of SpeechQualityLLM on NISQA."
+    )
+    parser.add_argument(
+        "--csv_path", type=str, default="Dataset/NISQA_Corpus/NISQA_corpus_file.csv"
+    )
+    parser.add_argument(
+        "--dataset_split", type=str, default="TEST", choices=["TRAIN", "VAL", "TEST"]
+    )
+    parser.add_argument(
+        "--checkpoint_path",
+        type=str,
+        default="results/Reference_FrozenWhisper/checkpoint-6144",
+    )
     parser.add_argument("--batch_size", type=int, default=4)
     parser.add_argument("--target_sr", type=int, default=16000)
     parser.add_argument("--target_duration", type=float, default=10.0)
@@ -701,17 +726,27 @@ def main():
         default="mos_numeric,dim_numeric,dim_categ,multi_dim,explanatory",
         help="Comma-separated list of tasks to evaluate.",
     )
-    parser.add_argument("--output_dir", type=str, default="evaluation/Reference_FrozenWhisper")
+    parser.add_argument(
+        "--output_dir", type=str, default="evaluation/Reference_FrozenWhisper"
+    )
+    parser.add_argument(
+        "--no_temperature",
+        type=bool,
+        default=False,
+        help="Whether to disable sampling and use greedy decoding.",
+    )
     args = parser.parse_args()
 
-    os.makedirs(args.output_dir, exist_ok=True)
+    os.makedirs(f"{args.output_dir}_temp_{not args.no_temperature}", exist_ok=True)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
 
     # Load base modules + wrap in SpeechQualityLLM
     llm_base, whisper_encoder = load_modules()
-    model = SpeechQualityLLM(whisper_encoder=whisper_encoder, llm=llm_base, pooling_length=128)
+    model = SpeechQualityLLM(
+        whisper_encoder=whisper_encoder, llm=llm_base, pooling_length=128
+    )
     model = model.to(device)
     load_checkpoint(model, args.checkpoint_path, device)
     model.llm.config.pad_token_id = TOKENIZER.pad_token_id
@@ -739,7 +774,12 @@ def main():
         )
 
         metrics_task, multi_stats, prediction_rows = evaluate_single_task(
-            task_name, model, test_loader, device, max_batches=args.max_batches
+            task_name,
+            model,
+            test_loader,
+            device,
+            max_batches=args.max_batches,
+            no_temperature=args.no_temperature,
         )
 
         # Save per-task artifacts
@@ -779,8 +819,6 @@ def main():
                 f"Pearson={pr_str} Spearman={sr_str}"
             )
 
-
-    
     metrics_all_path = os.path.join(args.output_dir, "metrics_all.json")
     with open(metrics_all_path, "w") as f:
         json.dump(metrics_all, f, indent=2)

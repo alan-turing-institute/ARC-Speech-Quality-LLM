@@ -1,10 +1,9 @@
-import os
 import argparse
+import os
 
 import torch
 import torch.nn as nn
 from safetensors.torch import load_file
-
 from transformers import (
     AutoModelForAudioClassification,
     AutoModelForCausalLM,
@@ -13,15 +12,14 @@ from transformers import (
 
 from src.dataloader_ref import (
     AST_DIR,
+    AST_FEATURE_EXTRACTOR,
     LLAMA_DIR,
     TOKENIZER,
-    AST_FEATURE_EXTRACTOR,
-    load_wav_mono,
     align_and_window_pair,
-    prompt_template_fn,
     end_template,
+    load_wav_mono,
+    prompt_template_fn,
 )
-
 
 if TOKENIZER.pad_token is None:
     TOKENIZER.pad_token = TOKENIZER.eos_token
@@ -51,11 +49,11 @@ class AudioProjectionLayer(nn.Module):
 
     def forward(self, x):
         # x: [B, T, C_in]
-        x = x.transpose(-2, -1)          # [B, C_in, T]
-        x = self.pool(x)                 # [B, C_in, T_p]
-        x = x.transpose(-2, -1)          # [B, T_p, C_in]
+        x = x.transpose(-2, -1)  # [B, C_in, T]
+        x = self.pool(x)  # [B, C_in, T_p]
+        x = x.transpose(-2, -1)  # [B, T_p, C_in]
         x = self.layer_norm(x)
-        x = self.linear_projection(x)    # [B, T_p, C_out]
+        x = self.linear_projection(x)  # [B, T_p, C_out]
         return x
 
 
@@ -128,7 +126,9 @@ class SpeechQualityLLM(nn.Module):
             (
                 prompt_attention_mask,
                 torch.ones(bs, noisy_audio_token_len, device=speech_quality_ids.device),
-                torch.ones(bs, reference_audio_token_len, device=speech_quality_ids.device),
+                torch.ones(
+                    bs, reference_audio_token_len, device=speech_quality_ids.device
+                ),
                 end_prompt_attention_mask,
             ),
             dim=1,
@@ -231,14 +231,12 @@ def build_single_example_batch(
     )
 
     # 3) Extract AST input features (degraded + reference)
-    feature_deg = AST_FEATURE_EXTRACTOR(
-        wav_deg_win,
-        sampling_rate=target_sr
-    )["input_values"][0]
-    feature_ref = AST_FEATURE_EXTRACTOR(
-        wav_ref_win,
-        sampling_rate=target_sr
-    )["input_values"][0]
+    feature_deg = AST_FEATURE_EXTRACTOR(wav_deg_win, sampling_rate=target_sr)[
+        "input_values"
+    ][0]
+    feature_ref = AST_FEATURE_EXTRACTOR(wav_ref_win, sampling_rate=target_sr)[
+        "input_values"
+    ][0]
 
     noisy_feature = AST_FEATURE_EXTRACTOR.pad(
         {"input_values": feature_deg},
@@ -286,13 +284,13 @@ def build_single_example_batch(
     speech_quality_attention_mask = sq_tokens.attention_mask
 
     batch = {
-        "noisy_features": noisy_features,                 # [1, 1, T]
-        "reference_features": reference_features,         # [1, 1, T]
-        "speech_quality_ids": speech_quality_ids,         # [1, L_ans]
+        "noisy_features": noisy_features,  # [1, 1, T]
+        "reference_features": reference_features,  # [1, 1, T]
+        "speech_quality_ids": speech_quality_ids,  # [1, L_ans]
         "speech_quality_attention_mask": speech_quality_attention_mask,
-        "prompt_ids": prompt_ids,                         # [1, L_prompt]
+        "prompt_ids": prompt_ids,  # [1, L_prompt]
         "prompt_attention_mask": prompt_attention_mask,
-        "end_prompt_ids": end_prompt_ids,                 # [1, L_end]
+        "end_prompt_ids": end_prompt_ids,  # [1, L_end]
         "end_prompt_attention_mask": end_prompt_attention_mask,
     }
     return batch
@@ -350,6 +348,12 @@ def main():
         default=128,
         help="Maximum number of tokens to generate.",
     )
+    parser.add_argument(
+        "--no_temperature",
+        type=bool,
+        default=False,
+        help="Whether to disable sampling and use greedy decoding.",
+    )
     args = parser.parse_args()
 
     if not os.path.isfile(args.deg_path):
@@ -399,6 +403,7 @@ def main():
             max_new_tokens=args.max_new_tokens,
             pad_token_id=TOKENIZER.pad_token_id,
             eos_token_id=TOKENIZER.eos_token_id,
+            do_sample=not args.no_temperature,
         )
         generated = TOKENIZER.batch_decode(gen_ids, skip_special_tokens=True)[0]
 

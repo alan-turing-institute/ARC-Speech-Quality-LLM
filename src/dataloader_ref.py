@@ -11,20 +11,18 @@ Metadata has columns:
 import os
 import random
 from dataclasses import dataclass
-from typing import Dict, Any, Tuple, Optional
+from typing import Any, Dict, Optional, Tuple
 
-import pandas as pd
 import numpy as np
+import pandas as pd
+import scipy.signal as sig
+import soundfile as sf
 import torch
 from torch.utils.data import Dataset
-import soundfile as sf  
-import scipy.signal as sig
-
 from transformers import ASTFeatureExtractor, AutoTokenizer
 
-
-AST_DIR = "AST"
-LLAMA_DIR = "llama-32-8B"
+AST_DIR = "MIT/ast-finetuned-audioset-10-10-0.4593"
+LLAMA_DIR = "meta-llama/Llama-3.1-8B-Instruct"
 
 TOKENIZER = AutoTokenizer.from_pretrained(LLAMA_DIR)
 TOKENIZER.pad_token = TOKENIZER.eos_token
@@ -36,15 +34,17 @@ AST_FEATURE_EXTRACTOR = ASTFeatureExtractor.from_pretrained(AST_DIR)
 Prompt Template and Feature Extractors
 """
 
+
 def prompt_template_fn(
-        prompt="Evaluate the quality of provided audio.",
-        system_message="You are an audio quality evaluation expert."
+    prompt="Evaluate the quality of provided audio.",
+    system_message="You are an audio quality evaluation expert.",
 ):
     prompt_prefix = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
     {system_message}<|eot_id|><|start_header_id|>user<|end_header_id|>
     {prompt}
     """
     return prompt_prefix
+
 
 def end_template():
     return """
@@ -343,7 +343,9 @@ class NISQATemplateBank:
             meta = {"task": "multi_dim"}
 
         elif task == "explanatory":
-            cause_desc = con_desc if con_desc else "typical network and noise distortions"
+            cause_desc = (
+                con_desc if con_desc else "typical network and noise distortions"
+            )
             q = rng.choice(self.q_explanatory)
             a = rng.choice(self.a_explanatory).format(
                 cause_desc=cause_desc,
@@ -379,16 +381,16 @@ def load_wav_mono(path: str, target_sr: Optional[int] = None) -> Tuple[np.ndarra
     wav = wav.astype(np.float32)
 
     if target_sr is not None and sr != target_sr:
-        wav = sig.resample(
-            wav,
-            int(len(wav) * (target_sr/sr))
-        )
+        wav = sig.resample(wav, int(len(wav) * (target_sr / sr)))
 
         return wav, target_sr
 
     return wav, sr
 
-def crop_or_pad_1d(wav: np.ndarray, target_len: int, rng: Optional[np.random.RandomState] = None) -> np.ndarray:
+
+def crop_or_pad_1d(
+    wav: np.ndarray, target_len: int, rng: Optional[np.random.RandomState] = None
+) -> np.ndarray:
     """
     Crop or pad a 1D waveform to exactly `target_len` samples.
     If longer: random crop (if rng provided) or from the start.
@@ -403,7 +405,7 @@ def crop_or_pad_1d(wav: np.ndarray, target_len: int, rng: Optional[np.random.Ran
             start = 0
         else:
             start = rng.randint(0, L - target_len + 1)
-        return wav[start:start + target_len]
+        return wav[start : start + target_len]
     else:
         pad_len = target_len - L
         return np.pad(wav, (0, pad_len), mode="constant")
@@ -442,9 +444,7 @@ def estimate_delay_samples(
 
     # Search only within ±max_lag_seconds
     max_lag_samples_ds = int(max_lag_seconds * (sr / ds))
-    valid = np.where(
-        (lags >= -max_lag_samples_ds) & (lags <= max_lag_samples_ds)
-    )[0]
+    valid = np.where((lags >= -max_lag_samples_ds) & (lags <= max_lag_samples_ds))[0]
     if valid.size == 0:
         return 0
 
@@ -544,7 +544,6 @@ class NISQAAudioQADataset(Dataset):
         """
         super().__init__()
 
-        
         self.target_sr = target_sr
         self.target_duration = target_duration
 
@@ -554,7 +553,7 @@ class NISQAAudioQADataset(Dataset):
         dataset = dataset[dataset["filepath_ref"].notna()]
         print(f"After filtering NAN reference files, size: {len(dataset)}")
         self.table = dataset[dataset["db"].str.contains(dataset_split)]
-        
+
         self.allowed_tasks = allowed_tasks
         self.target_sr = target_sr
 
@@ -569,10 +568,10 @@ class NISQAAudioQADataset(Dataset):
 
     def _get_rng(self) -> random.Random:
         """
-        Return an RNG. 
+        Return an RNG.
         """
         return self.rng
-    
+
     def __getitem__(self, idx: int) -> Dict[str, Any]:
         row = self._rows[idx]
         rng = self._get_rng()
@@ -591,8 +590,9 @@ class NISQAAudioQADataset(Dataset):
         wav_ref, sr_ref = load_wav_mono(path_ref, target_sr=self.target_sr)
 
         # Sanity: ensure same sampling rate
-        assert sr_deg == sr_ref == self.target_sr, \
-            f"Sample rates mismatch: deg={sr_deg}, ref={sr_ref}, target={self.target_sr}"
+        assert (
+            sr_deg == sr_ref == self.target_sr
+        ), f"Sample rates mismatch: deg={sr_deg}, ref={sr_ref}, target={self.target_sr}"
 
         # 3) Time-align and window both signals to the same fixed duration
         wav_ref_win, wav_deg_win = align_and_window_pair(
@@ -605,15 +605,13 @@ class NISQAAudioQADataset(Dataset):
         )
 
         # 4) Extract audio feature from *aligned* degraded signal
-        feature_deg = AST_FEATURE_EXTRACTOR(
-            wav_deg_win,
-            sampling_rate=self.target_sr
-        )["input_values"][0]
+        feature_deg = AST_FEATURE_EXTRACTOR(wav_deg_win, sampling_rate=self.target_sr)[
+            "input_values"
+        ][0]
 
-        feature_ref = AST_FEATURE_EXTRACTOR(
-            wav_ref_win,
-            sampling_rate=self.target_sr
-        )["input_values"][0]
+        feature_ref = AST_FEATURE_EXTRACTOR(wav_ref_win, sampling_rate=self.target_sr)[
+            "input_values"
+        ][0]
 
         # 5) Prepare numeric labels
         labels = {
@@ -637,9 +635,7 @@ class NISQAAudioQADataset(Dataset):
         speech_quality_mask = sq_tokens.attention_mask
 
         prompt_tokens = TOKENIZER(
-            prompt_template_fn(question),
-            padding=True,
-            truncation=True
+            prompt_template_fn(question), padding=True, truncation=True
         )
         prompt_ids = prompt_tokens.input_ids
         prompt_mask = prompt_tokens.attention_mask
@@ -654,11 +650,9 @@ class NISQAAudioQADataset(Dataset):
             "question": question,
             "answer": answer,
             "labels": labels,
-
             # AST feature from degraded signal
             "noisy_features": feature_deg,
             "reference_features": feature_ref,
-
             # text tokens
             "speech_quality_ids": speech_quality_ids,
             "speech_quality_attention_mask": speech_quality_mask,
@@ -679,7 +673,7 @@ if __name__ == "__main__":
         rng_seed=1234,
         allowed_tasks=("mos_numeric", "dim_numeric", "dim_categ", "multi_dim"),
         target_sr=16000,
-        target_duration=10.,
+        target_duration=10.0,
     )
     print(len(dataset))
 
