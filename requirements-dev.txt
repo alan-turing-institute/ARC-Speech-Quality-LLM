@@ -1,0 +1,25 @@
+# Core ML/DL frameworks
+torch
+transformers
+peft
+safetensors
+
+# Audio processing
+soundfile
+scipy
+
+# Data handling
+numpy
+pandas
+
+# Training and experiment tracking
+wandb
+
+# Progress bars
+tqdm
+
+# Command line argument parsing
+argparse
+
+# Quantization
+bitsandbytes

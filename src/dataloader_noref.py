@@ -11,20 +11,18 @@ Metadata has columns:
 import os
 import random
 from dataclasses import dataclass
-from typing import Dict, Any, Tuple, Optional
+from typing import Any, Dict, Optional, Tuple
 
-import pandas as pd
 import numpy as np
+import pandas as pd
+import scipy.signal as sig
+import soundfile as sf
 import torch
 from torch.utils.data import Dataset
-import soundfile as sf  
-import scipy.signal as sig
-
 from transformers import ASTFeatureExtractor, AutoTokenizer
 
-
-AST_DIR = "AST"
-LLAMA_DIR = "llama-32-8B"
+AST_DIR = "MIT/ast-finetuned-audioset-10-10-0.4593"
+LLAMA_DIR = "meta-llama/Llama-3.1-8B-Instruct"
 
 TOKENIZER = AutoTokenizer.from_pretrained(LLAMA_DIR)
 TOKENIZER.pad_token = TOKENIZER.eos_token
@@ -36,15 +34,17 @@ AST_FEATURE_EXTRACTOR = ASTFeatureExtractor.from_pretrained(AST_DIR)
 Prompt Template and Feature Extractors
 """
 
+
 def prompt_template_fn(
-        prompt="Evaluate the quality of provided audio.",
-        system_message="You are an audio quality evaluation expert."
+    prompt="Evaluate the quality of provided audio.",
+    system_message="You are an audio quality evaluation expert.",
 ):
     prompt_prefix = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
     {system_message}<|eot_id|><|start_header_id|>user<|end_header_id|>
     {prompt}
     """
     return prompt_prefix
+
 
 def end_template():
     return """
@@ -332,7 +332,9 @@ class NISQATemplateBank:
             meta = {"task": "multi_dim"}
 
         elif task == "explanatory":
-            cause_desc = con_desc if con_desc else "typical network and noise distortions"
+            cause_desc = (
+                con_desc if con_desc else "typical network and noise distortions"
+            )
             q = rng.choice(self.q_explanatory)
             a = rng.choice(self.a_explanatory).format(
                 cause_desc=cause_desc,
@@ -368,10 +370,7 @@ def load_wav_mono(path: str, target_sr: Optional[int] = None) -> Tuple[np.ndarra
     wav = wav.astype(np.float32)
 
     if target_sr is not None and sr != target_sr:
-        wav = sig.resample(
-            wav,
-            int(len(wav) * (target_sr/sr))
-        )
+        wav = sig.resample(wav, int(len(wav) * (target_sr / sr)))
 
         return wav, target_sr
 
@@ -414,13 +413,12 @@ class NISQAAudioQADataset(Dataset):
         """
         super().__init__()
 
-        
         self.target_sr = target_sr
         self.target_duration = target_duration
 
         dataset = pd.read_csv(csv_path)
         self.table = dataset[dataset["db"].str.contains(dataset_split)]
-        
+
         self.allowed_tasks = allowed_tasks
         self.target_sr = target_sr
 
@@ -460,15 +458,17 @@ class NISQAAudioQADataset(Dataset):
         if wav_deg.shape[0] >= target_len:
             # random crop
             start = np.random.randint(0, wav_deg.shape[0] - target_len + 1)
-            wav_deg = wav_deg[start:start + target_len]
+            wav_deg = wav_deg[start : start + target_len]
         else:
             # pad with zeros at the end
             pad_len = target_len - wav_deg.shape[0]
             wav_deg = np.pad(wav_deg, (0, pad_len), mode="constant")
-        
+
         # 4) Extract Audio Feature
-        feature_deg = AST_FEATURE_EXTRACTOR(wav_deg, sampling_rate=self.target_sr)['input_values'][0]
-        
+        feature_deg = AST_FEATURE_EXTRACTOR(wav_deg, sampling_rate=self.target_sr)[
+            "input_values"
+        ][0]
+
         # 5) Prepare numeric labels
         labels = {
             "mos": float(row["mos"]),
@@ -490,7 +490,9 @@ class NISQAAudioQADataset(Dataset):
         speech_quality_ids = sq_tokens.input_ids
         speech_quality_mask = sq_tokens.attention_mask
 
-        prompt_tokens = TOKENIZER(prompt_template_fn(question), padding=True, truncation=True)
+        prompt_tokens = TOKENIZER(
+            prompt_template_fn(question), padding=True, truncation=True
+        )
         prompt_ids = prompt_tokens.input_ids
         prompt_mask = prompt_tokens.attention_mask
 
@@ -503,14 +505,13 @@ class NISQAAudioQADataset(Dataset):
             "question": question,
             "answer": answer,
             "labels": labels,
-
             "noisy_features": feature_deg,
             "speech_quality_ids": speech_quality_ids,
             "speech_quality_attention_mask": speech_quality_mask,
             "prompt_ids": prompt_ids,
             "prompt_attention_mask": prompt_mask,
             "end_prompt_ids": end_prompt_ids,
-            "end_prompt_attention_mask": end_prompt_mask
+            "end_prompt_attention_mask": end_prompt_mask,
         }
 
 
@@ -524,7 +525,7 @@ if __name__ == "__main__":
         rng_seed=1234,
         allowed_tasks=("mos_numeric", "dim_numeric", "dim_categ", "multi_dim"),
         target_sr=16000,
-        target_duration=10.,
+        target_duration=10.0,
     )
     print(len(dataset))
 
