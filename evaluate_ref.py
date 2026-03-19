@@ -809,7 +809,9 @@ def main():
                 f"Pearson={pr_str} Spearman={sr_str}"
             )
 
-    metrics_all_path = os.path.join(args.output_dir, "metrics_all.json")
+    metrics_all_path = os.path.join(
+        f"{args.output_dir}_temp_{not args.no_temperature}", "metrics_all.json"
+    )
     with open(metrics_all_path, "w") as f:
         json.dump(metrics_all, f, indent=2)
     print(f"\nSaved global metrics summary to {metrics_all_path}")
