@@ -36,6 +36,8 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
+    print(f"Training type: {args.training_type}")
+
     if args.training_type == "full_reference_ast":
         FullReferenceWithASTTraining(
             csv_path=args.csv_path,
