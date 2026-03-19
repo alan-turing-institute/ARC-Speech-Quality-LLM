@@ -645,7 +645,7 @@ def train(
         weight_decay=0.01,
         logging_dir="./logs",
         logging_steps=32,
-        evaluation_strategy="steps",
+        eval_strategy="steps",
         eval_steps=eval_steps,
         save_steps=save_steps,
         load_best_model_at_end=False,
