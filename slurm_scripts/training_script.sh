@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#SBATCH --job-name=no_ref_training-%j
+#SBATCH --output=/lus/lfs1aip2/projects/u6ge/SQA/ARC-Speech-Quality-LLM/slurm_outputs/no_ref_training-%j.out
+#SBATCH --gpus=1
+#SBATCH --time=08:00:00         # Hours:Mins:Secs
+
+source /lus/lfs1aip2/projects/u6ge/SQA/ARC-Speech-Quality-LLM/.venv/bin/activate
+
+python train.py --training_type no_reference_ast --freeze_encoder False --output_dir /lus/lfs1aip2/projects/u6ge/SQA/ARC-Speech-Quality-LLM/trained_models/no_reference_ast 
