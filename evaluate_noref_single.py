@@ -263,7 +263,7 @@ def main():
     parser.add_argument(
         "--checkpoint_path",
         type=str,
-        default="results/NoReference/checkpoint-12288",
+        default="results/NoReference/checkpoint-122888",
         help="Path to Trainer checkpoint directory or .safetensors file.",
     )
     parser.add_argument(
