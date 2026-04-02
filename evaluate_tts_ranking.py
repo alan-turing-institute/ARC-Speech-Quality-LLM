@@ -556,7 +556,7 @@ def main():
     parser.add_argument(
         "--no_temperature",
         type=bool,
-        action="store_true",
+        # action="store_true",
         help="Use greedy decoding instead of sampling.",
     )
     args = parser.parse_args()
