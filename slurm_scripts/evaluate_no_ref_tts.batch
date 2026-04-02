@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#SBATCH --job-name=no_ref_eval-%j
+#SBATCH --output=/lus/lfs1aip2/projects/u6ge/SQA/ARC-Speech-Quality-LLM/slurm_outputs/no_ref_eval-%j.out
+#SBATCH --gpus=1
+#SBATCH --time=02:30:00         # Hours:Mins:Secs
+
+source /lus/lfs1aip2/projects/u6ge/SQA/ARC-Speech-Quality-LLM/.venv/bin/activate
+
+python evaluate_tts_ranking.py --root_dir /lus/lfs1aip2/projects/u6ge/SQA/ARC-TTSDS/data/v2_data/libritts --checkpoint_path /lus/lfs1aip2/projects/u6ge/SQA/ARC-Speech-Quality-LLM/results/NoReference/checkpoint-10240 --output_dir /lus/lfs1aip2/projects/u6ge/SQA/ARC-Speech-Quality-LLM/evaluation/tts_ranking --batch_size 4 --no_temperature True
