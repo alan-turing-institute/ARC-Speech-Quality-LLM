@@ -301,7 +301,9 @@ class TTSAudioDataset(Dataset):
         # Load and window audio
         wav, _sr = load_wav_mono(wav_path, target_sr=self.target_sr)
         target_len = int(self.target_duration * self.target_sr)
-        if wav.shape[0] >= target_len:
+        if wav.shape[0] == 0:
+            wav = np.zeros(target_len, dtype=np.float32)
+        elif wav.shape[0] >= target_len:
             wav = wav[:target_len]
         else:
             pad_len = target_len - wav.shape[0]
