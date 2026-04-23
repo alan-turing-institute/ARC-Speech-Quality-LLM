@@ -1,10 +1,25 @@
 # SpeechQualityLLM: LLM-based Interactive Assessment of Speech Quality
 
-This is a fork of the [SpeechQualityLLM repo](https://github.com/Monjur-Mahathir/Speech-Quality-LLM?tab=readme-ov-file), updated to be UV installable so that it can be run in 2026. 
+This is a fork of the [SpeechQualityLLM repo](https://github.com/Monjur-Mahathir/Speech-Quality-LLM?tab=readme-ov-file), updated to be `uv` installable so that it can be run in 2026. It now interfaces directly with huggingface to download and cache the base models.
 
 > **TL;DR.** SpeechQualityLLM turns objective speech quality assessment into a **question–answering task**:  
 > given a (degraded, optional reference) speech signal and a natural-language question, a multimodal LLM predicts
 > MOS and dimension-wise scores **and** explains its reasoning in text.
+
+---
+
+## Installation
+If `uv` is not installed it can be installed from the following command:
+
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Following this to install SpeechQualityLLM run,
+
+```
+uv sync 
+```
 
 ---
 
@@ -73,14 +88,7 @@ Speech-Quality-LLM/
 └─ evaluate.py
 └─ train.py
 ```
-## Installation
-- Install python libraries:
-  ```text
-  pip install -r requirements.txt
-  ```
-- Download AST encoder finetuned on AudioSet dataset and put it in the "AST" directory (https://huggingface.co/MIT/ast-finetuned-audioset-10-10-0.4593)
-- Download Llama 3.1-8B and put it inside the "llama-32-8B" directory (https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)
-- Download the trained checkpoint and put them inside the results directory (https://drive.google.com/drive/folders/1vzcmHgOIpqVe6KzQBUfI5lHOd4slUREO?usp=sharing)
+
 
 ## Evaluation
 For repeatability, append the following with `--no_temperature True`
