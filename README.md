@@ -1,5 +1,7 @@
 # SpeechQualityLLM: LLM-based Interactive Assessment of Speech Quality
 
+This is a fork of the [SpeechQualityLLM repo](https://github.com/Monjur-Mahathir/Speech-Quality-LLM?tab=readme-ov-file), updated to be UV installable so that it can be run in 2026. 
+
 > **TL;DR.** SpeechQualityLLM turns objective speech quality assessment into a **question–answering task**:  
 > given a (degraded, optional reference) speech signal and a natural-language question, a multimodal LLM predicts
 > MOS and dimension-wise scores **and** explains its reasoning in text.
