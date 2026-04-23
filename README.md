@@ -87,6 +87,9 @@ Speech-Quality-LLM/
 │   ├─ evaluate_ref_whisper.py
 │   ├─ evaluate_ref.py
 │   ├─ evaluate.py
+│   ├─ evaluate_noref_single.py
+│   ├─ evalute_tts_ranking.py
+│   ├─ evaluate_tts_ranking_ref.py
 └─ train.py
 ```
 
