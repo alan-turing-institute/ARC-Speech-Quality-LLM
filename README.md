@@ -90,6 +90,8 @@ Speech-Quality-LLM/
 │   ├─ evaluate_noref_single.py
 │   ├─ evalute_tts_ranking.py
 │   ├─ evaluate_tts_ranking_ref.py
+├─ evaluation/
+│   ├─ # results of evaluations scripts
 └─ train.py
 ```
 
@@ -113,8 +115,7 @@ In order to train the model on NISQA train, validation and test set, please run 
 ```
 Use any of ["full_reference_ast", "no_reference_ast", "full_reference_whisper"] training type and keep the audio encoder frozen or trainable (by default finetune query projection layers only). Also change the dataset path and training params as needed.
 ## Citation
-If you find this repository useful in your research, please consider citing the following work:
-```text
+```
 @misc{monjur2025speechqualityllmllmbasedmultimodalassessment,
       title={SpeechQualityLLM: LLM-Based Multimodal Assessment of Speech Quality}, 
       author={Mahathir Monjur and Shahriar Nirjon},
