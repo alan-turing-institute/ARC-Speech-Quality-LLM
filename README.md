@@ -25,7 +25,7 @@ uv sync
 
 ## Overview
 
-This repository contains code and pretrained checkpoints for **SpeechQualityLLM**, a multimodal system that:
+This repository contains code for **SpeechQualityLLM**, a multimodal system that:
 
 - Takes **degraded speech** (and optionally a **clean reference**) as input.
 - Uses an **audio encoder** (AST or Whisper) to extract time–frequency representations.
@@ -43,18 +43,19 @@ The model is trained on the **NISQA** dataset using automatically generated ques
 
 ## Main Features
 
-- ✅ **End-to-end multimodal QA** for speech quality (audio + text → text).
-- ✅ Support for **single-ended** and **double-ended** quality assessment.
-- ✅ Multiple audio backbones:
+- **End-to-end multimodal QA** for speech quality (audio + text → text).
+- Support for **single-ended** and **double-ended** quality assessment.
+- Multiple audio backbones:
   - [AST](https://arxiv.org/abs/2104.01778) (Audio Spectrogram Transformer)
   - [Whisper](https://openai.com/research/whisper) encoder
-- ✅ **LoRA-tuned** LLaMA backbone (e.g., LLaMA 3.1 8B) with 4-bit base weights.
-- ✅ Rich **textual outputs**: scores, rationales, and profile-conditioned prompts
+- **LoRA-tuned** LLaMA backbone (e.g., LLaMA 3.1 8B) with 4-bit base weights.
+- Rich **textual outputs**: scores, rationales, and profile-conditioned prompts
   (“act like a very noise-sensitive listener”, etc.).
-- ✅ Reproducible evaluation on NISQA:
+- Reproducible evaluation on NISQA:
   - MOS / dimension MAE, RMSE
   - Pearson / Spearman correlations
   - Multi-dimension consistency
+- Ranking of TTS models by the above speech quality metrics given adequate samples from each.
 
 ---
 
@@ -63,11 +64,11 @@ The model is trained on the **NISQA** dataset using automatically generated ques
 ```text
 Speech-Quality-LLM/
 ├─ README.md
-├─ requirements.txt                  # Python dependencies
+├─ LICENSE
+├─ pyproject.toml                  # Python dependencies
+├─ uv.lock
 ├─ Dataset/
 │   └─ NISQA_Corpus                  # NISQA metadata, audio files etc. (not included)
-├─ AST                               # AST encoder directory
-├─ llama-32-8B                       # Llama directory 
 ├─ results/
 │   └─ Reference
         └─ checkpoint-10240          # Checkpoints after training of 10,000 steps, downloadable from google drive: https://drive.google.com/drive/folders/1vzcmHgOIpqVe6KzQBUfI5lHOd4slUREO?usp=sharing
@@ -81,11 +82,11 @@ Speech-Quality-LLM/
 │   ├─ training_noref.py
 │   ├─ training_ref.py
 │   ├─ training_ref_whisper.py
-
-└─ evaluate_noref.py
-└─ evaluate_ref_whisper.py
-└─ evaluate_ref.py
-└─ evaluate.py
+├─ eval_scripts/
+│   ├─ evaluate_noref.py
+│   ├─ evaluate_ref_whisper.py
+│   ├─ evaluate_ref.py
+│   ├─ evaluate.py
 └─ train.py
 ```
 
